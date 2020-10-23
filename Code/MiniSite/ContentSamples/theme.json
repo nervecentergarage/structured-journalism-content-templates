@@ -1,0 +1,82 @@
+[
+    {
+        "themeID": "1",
+        "theme" : "Oceans in the 21st Century",
+        "theme_description" : "Oceans are old water and they can't keep up with Climate Change.",
+        "topics" : {
+            "topic1" : {
+                "topicID" : "1",
+                "title" : "Ice Flows",
+                "summary" : "lorem ipsum....",
+                "images" : 3,
+                "videos" : 2,
+                "graphs" : 1,
+                "tables" : 0,
+                "audio" : 1,
+                "infographics" : 0,
+                "text" : 5
+            },
+            "topic2" : {
+                "topicID" : "2",
+                "title" : "Salinity",
+                "summary" : "lorem ipsum....",
+                "images" : 2,
+                "videos" : 0,
+                "graphs" : 0,
+                "tables" : 0,
+                "audio" : 1,
+                "infographics" : 0,
+                "text" : 2
+            },
+            "topic3" : {
+                "topicID" : "3",
+                "title" : "Rising Tempuratures",
+                "summary" : "lorem ipsum....",
+                "images" : 3,
+                "videos" : 2,
+                "graphs" : 1,
+                "tables" : 0,
+                "audio" : 1,
+                "infographics" : 0,
+                "text" : 5
+            },
+            "topic4" : {
+                "topicID" : "4",
+                "title" : "Something Else",
+                "summary" : "lorem ipsum....",
+                "images" : 2,
+                "videos" : 5,
+                "graphs" : 6,
+                "tables" : 0,
+                "audio" : 0,
+                "infographics" : 0,
+                "text" : 0
+            },
+            "topic5" : {
+                "topicID" : "5",
+                "title" : "Another Thing",
+                "summary" : "lorem ipsum....",
+                "images" : 0,
+                "videos" : 0,
+                "graphs" : 1,
+                "tables" : 0,
+                "audio" : 1,
+                "infographics" : 0,
+                "text" : 1
+            },
+            "topic6" : {
+                "topicID" : "6",
+                "title" : "Seagulls are going to take over the world and eat us all!",
+                "summary" : "lorem ipsum....",
+                "images" : 3,
+                "videos" : 3,
+                "graphs" : 0,
+                "tables" : 2,
+                "audio" : 1,
+                "infographics" : 2,
+                "text" : 2
+            }
+        }
+    }
+
+]

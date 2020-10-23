@@ -1,0 +1,72 @@
+[
+    {
+        "personaID" : 1,
+        "persona" : "Data Nerd",
+        "description" : "I want to form my own opinions from the data before I can be influenced be someone else's interpretation.",
+        "affinities": {
+            "images" : 0.2,
+            "videos" : 0.3,
+            "graphs" : 1.0,
+            "tables" : 1.0,
+            "audio" : 0.0,
+            "infographics" : 0.75,
+            "text" : 0.5
+        }
+    },
+    {
+        "personaID" : 2,
+        "persona" : "Focus Flexible",
+        "description" : "I want to be able to quickly adjust how much attention I give to a piece of content",
+        "affinities": {
+            "images" : 0.7,
+            "videos" : 0.0,
+            "graphs" : 0.7,
+            "tables" : 0.3,
+            "audio" : 0.0,
+            "infographics" : 1.0,
+            "text" : 0.5
+        }
+    },
+    {
+        "personaID" : 3,
+        "persona" : "Audiophile",
+        "description" : "I want to be able to listen to my content, either through straight audio or screen readers.",
+        "affinities": {
+            "images" : 0.2,
+            "videos" : 1.0,
+            "graphs" : 0.0,
+            "tables" : 0.0,
+            "audio" : 1.0,
+            "infographics" : 0.1,
+            "text" : 0.7
+        }
+    },
+    {
+        "personaID" : 4,
+        "persona" : "Textual Titan",
+        "description" : "I want to read. Words are the window to my soul.",
+        "affinities": {
+            "images" : 0.2,
+            "videos" : 0.0,
+            "graphs" : 0.5,
+            "tables" : 1.0,
+            "audio" : 0.0,
+            "infographics" : 0.75,
+            "text" : 1.0
+        }
+    },
+    {
+        "personaID" : 5,
+        "persona" : "Pictures for a 1000",
+        "description" : "I want to see the story. Images speak more to me than words alone."
+        "affinities": {
+            "images" : 1.0,
+            "videos" : 1.0,
+            "graphs" : 1.0,
+            "tables" : 0.5,
+            "audio" : 0.0,
+            "infographics" : 0.75,
+            "text" : 0.0
+        }
+    }
+]

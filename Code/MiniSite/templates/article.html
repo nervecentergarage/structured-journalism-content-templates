@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+img {
+  width: 100%;
+  height: auto;
+}
+/* graphic thumbnail */
+.img-graphic {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.img-graphic:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* video display */
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* audio display */
+audio { width: 100%; }
+
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>Lorum Ipsum</b></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer <span class="w3-tag">adipiscing elit</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+  <!-- Primary story -->
+  <div class="w3-col l8 s12">
+
+    <!-- Primary content: fact -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <p style="font-size:2.5vw;">an area covering 2.24 million square kilometers - roughly the combined land surface of Texas and Alaska, two sizeable US states - has been added to global tree cover since 1982.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Details »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Rating </b> <span class="w3-tag">4/5</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Primary content: chart -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <img src="https://assets.weforum.org/editor/large_uoGiTxo_K9_klnAu9XLQXF04dGnlyXywTEkFmW3EEtY.png"/>
+        <p>gravida diam non fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Details »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Rating  </b> <span class="w3-tag">4/5</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Primary content: table -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <!-- Table start -->
+      <div class="datatable" id="table-oceania" style="overflow-x:auto;">
+        <table id="myTable" width="100%" border="1" itemprop="alternativeheadlline" content="List:Tropical primary forest cover loss">
+          <tr><th><b/>Country</th><th>Primary<br>forest<br>extent<BR>(2018)</th><th>Primary / Total<br>tree cover<br>(2018)</th><th>Primary<br>forest loss<br>(2001-2018)</th><th>%<br>loss</th><th>Total<br>tree cover<br>(2018)</th><th>%<br>tree<br>cover<br>(2018)</th><th>Tree<br>cover loss<br>(2001-2018)</b></th></tr>
+          <tr><td>DR Congo</td><td>100,227,214</td><td>53.0%</td><td>4,352,849</td><td>4.2%</td><td>189,337,424</td><td>81.2%</td><td>12,836,705</td></tr>		<tr><td>Gabon</td><td>22,443,921</td><td>92.0%</td><td>225,603</td><td>1.0%</td><td>24,461,643</td><td>92.4%</td><td>385,004</td></tr>
+          <tr><td>Republic of Congo</td><td>20,860,126</td><td>80.0%</td><td>293,053</td><td>1.4%</td><td>26,139,750</td><td>76.4%</td><td>680,957</td></tr>
+          <tr><td>Cameroon</td><td>18,521,981</td><td>62.0%</td><td>553,653</td><td>2.9%</td><td>29,665,184</td><td>63.6%</td><td>1,161,442</td></tr>
+          <tr><td>Central African Republic</td><td>7,220,064</td><td>15.0%</td><td>143,064</td><td>1.9%</td><td>46,838,774</td><td>75.5%</td><td>693,507</td></tr>
+          <tr><td>Equatorial Guinea</td><td>2,191,640</td><td>86.0%</td><td>54,504</td><td>2.4%</td><td>2,553,882</td><td>94.5%</td><td>103,452</td></tr>
+        </table>
+        <p>gravida diam non fringilla.</p>
+      </div>
+      <!-- Table end -->
+      <div class="w3-container">
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Details »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Rating  </b> <span class="w3-tag">4/5</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Primary content: graphic -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <a target="_blank" href="https://inhabitat.com/wp-content/blogs.dir/1/files/2014/12/Jarrimber-Deforestation-Infographic-2.jpg">
+        <img class="img-graphic" src="https://inhabitat.com/wp-content/blogs.dir/1/files/2014/12/Jarrimber-Deforestation-Infographic-2.jpg" alt="Forest">
+      </a>
+      <div class="w3-container">
+        <p>gravida diam non fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Details »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Rating  </b> <span class="w3-tag">4/5</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End primary story -->
+  </div>
+
+  <!-- Secondary story -->
+  <div class="w3-col l4">
+    <!-- secondary content: video -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="container">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/vJnnrpSDWPI"></iframe>
+      </div>
+      <div class="w3-container">
+        <p>gravida diam non fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Details »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Rating </b> <span class="w3-tag">4/5</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div><hr>
+
+    <!-- secondary content: image -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <img src="https://www.rainforest-alliance.org/sites/default/files/2019-09/guatemala%20deforestation%20vs%20forest%20-%20header.jpg">
+      <div class="w3-container">
+        <p>gravida diam non fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Details »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Rating </b> <span class="w3-tag">4/5</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- secondary content: audio -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <div class="w3-container">
+        <p>gravida diam non fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Details »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Rating </b> <span class="w3-tag">4/5</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Labels / tags -->
+    <div class="w3-card w3-margin">
+      <div class="w3-container w3-padding">
+        <h4>Tags</h4>
+      </div>
+      <div class="w3-container w3-white">
+      <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+      </div>
+    </div>
+
+  <!-- END Secondary story -->
+  </div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="location.href='/';">Back</button>
+  <p>Powered by <a href="https://www.dxc.com" target="_blank">DXC Technology</a></p>
+</footer>
+
+</body>
+</html>
