@@ -21,4 +21,4 @@ jobs:
       # Runs the Docker build as a series of commands using the runners shell
       - name: docker build
         run: |
-          docker build ./Code/Minisite -t latest
+          docker build ./Code/MiniSite -t latest
