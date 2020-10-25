@@ -32,7 +32,7 @@ jobs:
         run: |
           docker build ./Code/MiniSite -t structured-journalism-content-template:latest
           
-      #Push the new image to DockerHub
+      # Push the new image to DockerHub
       - name: docker hub push
         run: |
           docker push structured-journalism-content-template:latest
