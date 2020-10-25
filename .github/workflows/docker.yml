@@ -18,7 +18,7 @@ jobs:
       # Checks-out the repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
       
-      # Define the DockerHub credentials
+      # Define the DockerHub credentials and log in
       - name: docker login
         env:
           DOCKER_HUB_USER: ${{secrets.DOCKER_HUB_USER}}  
@@ -31,3 +31,8 @@ jobs:
       - name: docker build
         run: |
           docker build ./Code/MiniSite -t latest
+          
+      #Push the new image to DockerHub
+      - name: docker hub push
+        run: |
+          docker push latest
