@@ -17,6 +17,15 @@ jobs:
     steps:
       # Checks-out the repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
+      
+      # Define the DockerHub credentials
+      - name: docker login
+        env:
+          DOCKER_HUB_USER: ${{secrets.DOCKER_HUB_USER}}  
+          DOCKER_HUB_PWD: ${{secrets.DOCKER_HUB_PWD}}:  
+        run: |
+          docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PWD
+          
 
       # Runs the Docker build as a series of commands using the runners shell
       - name: docker build
