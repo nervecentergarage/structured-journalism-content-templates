@@ -1,0 +1,22 @@
+name: Deploy container
+
+on:
+  push:
+    branches: [ main ]
+    
+# The build jobs that run sequentially
+jobs:
+  build:
+    # The Docker build will run on
+    runs-on: ubuntu-latest
+
+    # Tasks that will be executed as part of the job
+    steps:
+      
+      # Install the Heroku CLI
+      - name: Install Heroku CLI
+        env:
+          DOCKER_HUB_USER: ${{secrets.DOCKER_HUB_USER}}  
+          DOCKER_HUB_PWD: ${{secrets.DOCKER_HUB_PWD}}
+        run: |
+          sudo snap install --classic heroku
