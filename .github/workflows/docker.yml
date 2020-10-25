@@ -22,7 +22,7 @@ jobs:
       - name: docker login
         env:
           DOCKER_HUB_USER: ${{secrets.DOCKER_HUB_USER}}  
-          DOCKER_HUB_PWD: ${{secrets.DOCKER_HUB_PWD}}:  
+          DOCKER_HUB_PWD: ${{secrets.DOCKER_HUB_PWD}}
         run: |
           docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PWD
           
