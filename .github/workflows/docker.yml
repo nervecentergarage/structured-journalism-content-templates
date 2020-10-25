@@ -30,7 +30,7 @@ jobs:
       # Runs the Docker build as a series of commands using the runners shell
       - name: docker build
         run: |
-          docker build ./Code/MiniSite -t structured-journalism-content-template:latest
+          docker build ./Code/MiniSite -t jerryaoverton/structured-journalism-content-template:latest
           
       # Push the new image to DockerHub
       - name: docker hub push
