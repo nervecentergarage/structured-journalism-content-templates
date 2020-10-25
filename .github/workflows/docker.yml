@@ -35,4 +35,4 @@ jobs:
       #Push the new image to DockerHub
       - name: docker hub push
         run: |
-          docker push jerryaoverton/structured-journalism-content-template:latest
+          docker push structured-journalism-content-template:latest
