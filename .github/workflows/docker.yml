@@ -24,7 +24,7 @@ jobs:
           DOCKER_HUB_USER: ${{secrets.DOCKER_HUB_USER}}  
           DOCKER_HUB_PWD: ${{secrets.DOCKER_HUB_PWD}}
         run: |
-          docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PWD
+          docker login docker.io -u $DOCKER_HUB_USER -p $DOCKER_HUB_PWD
           
 
       # Runs the Docker build as a series of commands using the runners shell
