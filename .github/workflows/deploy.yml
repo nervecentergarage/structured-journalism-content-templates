@@ -14,9 +14,13 @@ jobs:
     steps:
       
       # Install the Heroku CLI
-      - name: Install Heroku CLI
-        env:
-          DOCKER_HUB_USER: ${{secrets.DOCKER_HUB_USER}}  
-          DOCKER_HUB_PWD: ${{secrets.DOCKER_HUB_PWD}}
-        run: |
-          sudo snap install --classic heroku
+      - name: Deploy container to Heroku
+      - uses: actions/checkout@v2
+      - uses: joverton/heroku-deploy@v3.6.8 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "SJCT" #Must be unique in Heroku
+          heroku_email: "joverton@dxc.com"
+          usedocker: true
+          
+            
