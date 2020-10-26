@@ -26,7 +26,7 @@ jobs:
           HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
           HEROKU_EMAIL: ${{secrets.HEROKU_EMAIL}}
         run: |
-          docker login docker.io -u $HEROKU_EMAIL -p $HEROKU_API_KEY registry.heroku.com
+          docker login -u $HEROKU_EMAIL -p $HEROKU_API_KEY registry.heroku.com
           
       # Runs the Docker build as a series of commands using the runners shell
       - name: docker build
