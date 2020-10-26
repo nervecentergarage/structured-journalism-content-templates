@@ -43,6 +43,6 @@ jobs:
           
           # Dokerfile directory.
           # For example, if you have a Dockerfile in the root of your project, leave it as follows:
-          dockerfile_directory: ./Code/MiniSite
+          dockerfile_directory: ./Code/MiniSite/
           
 ### ⬆ IMPORTANT PART ⬆ ###
