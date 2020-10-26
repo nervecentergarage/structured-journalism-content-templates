@@ -1,21 +1,17 @@
-name: Deploy Docker container to Heroku #set whatevername you want to your github job
+name: Deploy
 
 on:
   push:
-    branches: [ main ]
-      
+    branches:
+      - master
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Build, Push and Deploy to Heroku
-        id: heroku
-        uses: jctaveras/heroku-deploy@v1.0.0  # use the latest version of the action
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.6.8 # This is the action
         with:
-          email: ${{ secrets.HEROKU_EMAIL }} # your heroku email
-          api_key: ${{ secrets.HEROKU_API_KEY }} # your  heroku api key
-          app_name: ${{ secrets.HEROKU_APP_NAME }} # you aplication name
-          dockerfile_path: 'Code/MiniSite' # set the path to the folder where the Dokerfile is located
-          formation: web # Docker Dyno Formation. By default is web
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "sjct" #Must be unique in Heroku
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
