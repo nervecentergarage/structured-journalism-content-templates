@@ -5,7 +5,7 @@ name: Structured Journalism Content Templates Build
 # Initiate a Docker build any time there is a new push to the main branch
 on:
   push:
-    branches: [ main ]
+    branches: [ other ]
 
 # The build jobs that run sequentially
 jobs:
