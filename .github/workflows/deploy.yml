@@ -15,7 +15,7 @@ jobs:
       
       # Install the Heroku CLI
       - uses: actions/checkout@v2
-      - uses: nervecentergarage/structured-journalism-content-templates/deploy # This is the action
+      - uses: nervecentergarage/structured-journalism-content-templates/deploy@v1 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "sjct" #Must be unique in Heroku
