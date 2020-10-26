@@ -50,5 +50,5 @@ jobs:
           HEROKU_EMAIL: ${{secrets.HEROKU_EMAIL}}
         run: |
           sudo snap install --classic heroku
-          heroku login $HEROKY_EMAIL $HEROKU_API_KEY
+          heroku login -i $HEROKY_EMAIL $HEROKU_API_KEY
           heroku container:release web -a $HEROKU_APP_NAME
