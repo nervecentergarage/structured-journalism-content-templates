@@ -50,3 +50,4 @@ jobs:
           HEROKU_EMAIL: ${{secrets.HEROKU_EMAIL}}
         run: |
           sudo snap install --classic heroku
+          heroku login -i
