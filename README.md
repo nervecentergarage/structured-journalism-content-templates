@@ -1,4 +1,6 @@
 # Overview
+The deployed site can be found here: https://sjct.herokuapp.com/
+
 What’s the best way to present structured journalism content? We need to understand the goals of readers and design presentation strategies that fit. This team will attempt to invent personas and create responsive HTML templates that present structured journalism content in ways that appeal to each.
 
 # Key Team Skills
