@@ -1,4 +1,5 @@
 import os
+import json
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
@@ -25,8 +26,11 @@ def index():
 @app.route("/topic")
 def topic():
     id = request.args.get('id')
+    with open('ContentSamples/topic_detail.json') as f:
+        topic_detail = json.load(f)
+        primary_snippets = topic_detail['primary_snippets']
 
-    return render_template("topic.html", id=id)
+    return render_template("topic.html", id=id, primary_snippets=primary_snippets)
 
 
 if __name__ == "__main__":
