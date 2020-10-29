@@ -3,8 +3,8 @@
         "themeID": "1",
         "theme" : "Oceans in the 21st Century",
         "theme_description" : "Oceans are old water and they can't keep up with Climate Change.",
-        "topics" : {
-            "topic1" : {
+        "topics" : [
+            {
                 "topicID" : "1",
                 "title" : "Ice Flows",
                 "summary" : "lorem ipsum....",
@@ -16,7 +16,7 @@
                 "infographics" : 0,
                 "text" : 5
             },
-            "topic2" : {
+            {
                 "topicID" : "2",
                 "title" : "Salinity",
                 "summary" : "lorem ipsum....",
@@ -28,7 +28,7 @@
                 "infographics" : 0,
                 "text" : 2
             },
-            "topic3" : {
+            {
                 "topicID" : "3",
                 "title" : "Rising Tempuratures",
                 "summary" : "lorem ipsum....",
@@ -40,7 +40,7 @@
                 "infographics" : 0,
                 "text" : 5
             },
-            "topic4" : {
+            {
                 "topicID" : "4",
                 "title" : "Something Else",
                 "summary" : "lorem ipsum....",
@@ -52,7 +52,7 @@
                 "infographics" : 0,
                 "text" : 0
             },
-            "topic5" : {
+            {
                 "topicID" : "5",
                 "title" : "Another Thing",
                 "summary" : "lorem ipsum....",
@@ -64,7 +64,7 @@
                 "infographics" : 0,
                 "text" : 1
             },
-            "topic6" : {
+            {
                 "topicID" : "6",
                 "title" : "Seagulls are going to take over the world and eat us all!",
                 "summary" : "lorem ipsum....",
@@ -76,7 +76,7 @@
                 "infographics" : 2,
                 "text" : 2
             }
-        }
+        ]
     }
 
 ]
