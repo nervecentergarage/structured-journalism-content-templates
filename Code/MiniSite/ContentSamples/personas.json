@@ -58,7 +58,7 @@
     {
         "personaID" : 5,
         "persona" : "Pictures for a 1000",
-        "description" : "I want to see the story. Images speak more to me than words alone."
+        "description" : "I want to see the story. Images speak more to me than words alone.",
         "affinities": {
             "images" : 1.0,
             "videos" : 1.0,

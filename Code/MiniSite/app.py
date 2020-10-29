@@ -6,11 +6,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    personas = [
-        {'name': 'persona1', 'id': 'id1'},
-        {'name': 'persona2', 'id': 'id2'},
-        {'name': 'persona3', 'id': 'id3'}
-    ]
+    with open('ContentSamples/personas.json') as f:
+        personas = json.load(f)
+
     topics = [
         {'id': 'id1', 'heading': 'topic1', 'summary': 'summary1', 'description': 'description1'},
         {'id': 'id2', 'heading': 'topic2', 'summary': 'summary2', 'description': 'description2'},

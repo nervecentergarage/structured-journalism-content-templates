@@ -182,8 +182,8 @@
         <div class="dropdown-content"  onmouseleave="alert('hi')">
           {% for persona in personas %}
           <div class="slidecontainer">
-            <p>{{persona['name']}}</p>
-            <input type="range" min="1" max="100" value="50" class="slider" id="{{persona['id']}}">
+            <p>{{persona['persona']}}</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="{{persona['personaID']}}">
           </div>
           {% endfor %}
           <br/>
