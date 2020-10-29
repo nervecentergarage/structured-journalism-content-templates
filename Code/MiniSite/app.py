@@ -29,8 +29,9 @@ def topic():
     with open('ContentSamples/topic_detail.json') as f:
         topic_detail = json.load(f)
         primary_snippets = topic_detail['primary_snippets']
+        secondary_snippets = topic_detail['secondary_snippets']
 
-    return render_template("topic.html", id=id, primary_snippets=primary_snippets)
+    return render_template("topic.html", id=id, primary_snippets=primary_snippets, secondary_snippets=secondary_snippets)
 
 
 if __name__ == "__main__":
