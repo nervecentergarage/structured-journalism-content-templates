@@ -26,8 +26,6 @@ def index():
 def topic():
     id = request.args.get('id')
 
-    topic = {
-
     return render_template("topic.html", id=id)
 
 
