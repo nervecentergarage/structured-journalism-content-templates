@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    # read in personas
     with open('ContentSamples/personas.json') as f:
         personas = json.load(f)
 
@@ -23,13 +24,14 @@ def index():
 
 @app.route("/topic")
 def topic():
+    # read in topic details
     id = request.args.get('id')
     with open('ContentSamples/topic_detail.json') as f:
         topic_detail = json.load(f)
         primary_snippets = topic_detail['primary_snippets']
         secondary_snippets = topic_detail['secondary_snippets']
 
-    return render_template("topic.html", id=id, primary_snippets=primary_snippets, secondary_snippets=secondary_snippets)
+    return render_template("topic.html", primary_snippets=primary_snippets, secondary_snippets=secondary_snippets)
 
 
 if __name__ == "__main__":
