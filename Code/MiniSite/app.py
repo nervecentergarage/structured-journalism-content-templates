@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
@@ -11,20 +11,24 @@ def index():
         {'name': 'persona3', 'id': 'id3'}
     ]
     topics = [
-        {'heading': 'topic1', 'summary': 'summary1', 'description': 'description1'},
-        {'heading': 'topic2', 'summary': 'summary2', 'description': 'description2'},
-        {'heading': 'topic3', 'summary': 'summary3', 'description': 'description3'},
-        {'heading': 'topic4', 'summary': 'summary4', 'description': 'description4'},
-        {'heading': 'topic5', 'summary': 'summary5', 'description': 'description5'},
-        {'heading': 'topic6', 'summary': 'summary6', 'description': 'description6'},
-        {'heading': 'topic7', 'summary': 'summary7', 'description': 'description7'}
+        {'id': 'id1', 'heading': 'topic1', 'summary': 'summary1', 'description': 'description1'},
+        {'id': 'id2', 'heading': 'topic2', 'summary': 'summary2', 'description': 'description2'},
+        {'id': 'id3', 'heading': 'topic3', 'summary': 'summary3', 'description': 'description3'},
+        {'id': 'id4', 'heading': 'topic4', 'summary': 'summary4', 'description': 'description4'},
+        {'id': 'id5', 'heading': 'topic5', 'summary': 'summary5', 'description': 'description5'},
+        {'id': 'id6', 'heading': 'topic6', 'summary': 'summary6', 'description': 'description6'},
+        {'id': 'id7', 'heading': 'topic7', 'summary': 'summary7', 'description': 'description7'}
     ]
     return render_template("index.html", personas=personas, topics=topics)
 
 
-@app.route("/article")
-def article():
-    return render_template("article.html")
+@app.route("/topic")
+def topic():
+    id = request.args.get('id')
+
+    topic = {
+
+    return render_template("topic.html", id=id)
 
 
 if __name__ == "__main__":

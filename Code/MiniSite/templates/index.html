@@ -214,7 +214,7 @@
         {% for index in range(start_topic_index,end_topic_index) %}
           {% if not(index > num_topics -1) %}
             <div class="w3-third">
-              <h2><a href="article">{{topics[index]['heading']}}</a></h2>
+              <h2><a href="topic?id={{topics[index]['id']}}">{{topics[index]['heading']}}</a></h2>
               <p>{{topics[index]['summary']}}</p>
               <p>{{topics[index]['description']}}</p>
             </div>
