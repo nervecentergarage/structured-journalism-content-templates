@@ -1,7 +1,12 @@
 import os
 import json
+from http.cookies import SimpleCookie
+
 from flask import Flask, render_template, request
 app = Flask(__name__)
+
+# used to store persona preference selections from the user
+persona_values = {}
 
 
 @app.route("/")
@@ -28,6 +33,20 @@ def topic():
         secondary_snippets = topic_detail['secondary_snippets']
 
     return render_template("topic.html", primary_snippets=primary_snippets, secondary_snippets=secondary_snippets)
+
+
+@app.route("/update-persona")
+def updatePersona():
+    persona_selections = request.args.get('selections')
+
+    cookie = SimpleCookie()
+    cookie.load(persona_selections)
+
+    for key, entry in cookie.items():
+        persona_values[key] = entry.value
+
+    print("persona updated: " + str(persona_values))
+    return ""
 
 
 if __name__ == "__main__":

@@ -184,7 +184,7 @@
           {% for persona in personas %}
           <div class="slidecontainer">
             <p>{{persona['persona']}}</p>
-            <input type="range" min="1" max="100" value="50" class="slider" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
+            <input type="range" min="1" max="100" value="0" class="slider" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
           </div>
           {% endfor %}
           <br/>
@@ -247,6 +247,10 @@ function updatePersona(id,value){
 //saves all changed personas
 function savePersonaSelections(){
   if (dirty) {
+    var x = new XMLHttpRequest();
+    x.open("GET", "update-persona?selections=" + document.cookie, true);
+    x.send();
+
     alert('personas updated ' + document.cookie);
     dirty = false
   }
