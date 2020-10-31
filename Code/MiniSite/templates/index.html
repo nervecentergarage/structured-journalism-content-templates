@@ -184,7 +184,7 @@
           {% for persona in personas %}
           <div class="slidecontainer">
             <p>{{persona['persona']}}</p>
-            <input type="range" min="1" max="100" value="50" class="slider" id="{{persona['personaID']}}" onchange="updatePersona()">
+            <input type="range" min="1" max="100" value="50" class="slider" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
           </div>
           {% endfor %}
           <br/>
@@ -233,14 +233,21 @@
 <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright DXC Technology</div>
 
 <script>
+
+//keeps track of persona changes that need to be saved
 var dirty = false
-function updatePersona(){
+
+//notes a particular persona change
+function updatePersona(id,value){
+  //save the current persona selection to a cookie
+  document.cookie = id + "=" + value;
   dirty = true
 }
 
+//saves all changed personas
 function savePersonaSelections(){
   if (dirty) {
-    alert('persona updated');
+    alert('personas updated ' + document.cookie);
     dirty = false
   }
 }
