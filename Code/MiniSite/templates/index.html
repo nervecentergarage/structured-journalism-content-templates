@@ -169,21 +169,22 @@
 </style>
   <!--list of articles-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 <body style="font-family:Verdana;color:#aaaaaa;">
 
 <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
     <div class="image-container">
-      <div class="dropdown" style="float:right;">
+      <div class="dropdown" style="float:right;" onmouseleave="javascript:savePersonaSelections()">
         <div class="chip">
           <img src="static/bot-avatar.png" alt="Person" width="96" height="96">
           &lt;/&gt;
         </div>
-        <div class="dropdown-content"  onmouseleave="alert('hi')">
+        <div class="dropdown-content"  id="personas">
           {% for persona in personas %}
           <div class="slidecontainer">
             <p>{{persona['persona']}}</p>
-            <input type="range" min="1" max="100" value="50" class="slider" id="{{persona['personaID']}}">
+            <input type="range" min="1" max="100" value="50" class="slider" id="{{persona['personaID']}}" onchange="updatePersona()">
           </div>
           {% endfor %}
           <br/>
@@ -232,13 +233,18 @@
 <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright DXC Technology</div>
 
 <script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+var dirty = false
+function updatePersona(){
+  dirty = true
+}
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+function savePersonaSelections(){
+  if (dirty) {
+    alert('persona updated');
+    dirty = false
+  }
 }
 </script>
+
 </body>
 </html>
