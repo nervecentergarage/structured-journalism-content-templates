@@ -171,7 +171,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
-<body style="font-family:Verdana;color:#aaaaaa;">
+<body style="font-family:Verdana;color:#aaaaaa;" onload="loadPersonaPreferences();">
 
 <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
     <div class="image-container">
@@ -237,6 +237,38 @@
 //keeps track of persona changes that need to be saved
 var dirty = false
 
+//converts the stored cookie into name/value pair object list
+function personaPreferences(){
+  var persona_preferences = []
+
+  persona_data = document.cookie.split(';')
+  for (persona_record of persona_data){
+    //read persona preference data
+    persona_fields = persona_record.split('=');
+    persona_id_value = persona_fields[0].trim();
+    persona_preference_value = persona_fields[1].trim();
+
+    //write a persona preference record
+    var persona_preference = {};
+    persona_preference['persona_id'] = persona_id_value;
+    persona_preference['preference_value'] = persona_preference_value;
+
+    //add the the persona preference to the output list
+    persona_preferences.push(persona_preference);
+  }
+  return persona_preferences
+}
+
+//loads persona preferences from cookies into the UI display
+function loadPersonaPreferences(){
+  //step through each persona preference and update the display
+  for (persona_preference of personaPreferences()){
+    id = persona_preference['persona_id'];
+    value = persona_preference['preference_value'];
+    document.getElementById(id).value = value;
+  };
+}
+
 //notes a particular persona change
 function updatePersona(id,value){
   //save the current persona selection to a cookie
@@ -246,12 +278,12 @@ function updatePersona(id,value){
 
 //saves all changed personas
 function savePersonaSelections(){
+  //update the server on the new persona preferences selected
   if (dirty) {
     var x = new XMLHttpRequest();
     x.open("GET", "update-persona?selections=" + document.cookie, true);
     x.send();
 
-    alert('personas updated ' + document.cookie);
     dirty = false
   }
 }

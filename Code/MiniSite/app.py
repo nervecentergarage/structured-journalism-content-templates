@@ -8,6 +8,10 @@ app = Flask(__name__)
 # used to store persona preference selections from the user
 persona_values = {}
 
+# read in definitions of the persona definitions
+with open('ContentSamples/personas.json') as f:
+    persona_definitions = json.load(f)
+
 
 @app.route("/")
 def index():
@@ -47,6 +51,10 @@ def updatePersona():
 
     print("persona updated: " + str(persona_values))
     return ""
+
+
+def snippet_persona_score(snippet_type):
+    pass
 
 
 if __name__ == "__main__":

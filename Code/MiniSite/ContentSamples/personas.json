@@ -1,6 +1,6 @@
 [
     {
-        "personaID" : 1,
+        "personaID" : "persona1",
         "persona" : "Data Nerd",
         "description" : "I want to form my own opinions from the data before I can be influenced be someone else's interpretation.",
         "affinities": {
@@ -14,7 +14,7 @@
         }
     },
     {
-        "personaID" : 2,
+        "personaID" : "persona2",
         "persona" : "Focus Flexible",
         "description" : "I want to be able to quickly adjust how much attention I give to a piece of content",
         "affinities": {
@@ -28,7 +28,7 @@
         }
     },
     {
-        "personaID" : 3,
+        "personaID" : "persona3",
         "persona" : "Audiophile",
         "description" : "I want to be able to listen to my content, either through straight audio or screen readers.",
         "affinities": {
@@ -42,7 +42,7 @@
         }
     },
     {
-        "personaID" : 4,
+        "personaID" : "persona4",
         "persona" : "Textual Titan",
         "description" : "I want to read. Words are the window to my soul.",
         "affinities": {
@@ -56,7 +56,7 @@
         }
     },
     {
-        "personaID" : 5,
+        "personaID" : "persona5",
         "persona" : "Pictures for a 1000",
         "description" : "I want to see the story. Images speak more to me than words alone.",
         "affinities": {
