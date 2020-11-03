@@ -8,6 +8,9 @@ app = Flask(__name__)
 # used to store persona preference selections from the user
 persona_values = {}
 
+# used to store the calculated affinities that the current user has for each snippet type
+snippet_affinities = []
+
 # read in definitions of the persona definitions
 with open('ContentSamples/personas.json') as f:
     persona_definitions = json.load(f)
@@ -41,6 +44,7 @@ def topic():
 
 @app.route("/update-persona")
 def updatePersona():
+    # store the persona values selected in the user experience
     persona_selections = request.args.get('selections')
 
     cookie = SimpleCookie()
@@ -50,12 +54,13 @@ def updatePersona():
         persona_values[key] = entry.value
 
     print("persona updated: " + str(persona_values))
+
+    update_snippet_affinities()
+
     return ""
 
 
-@app.route("/snippet_persona_score")
-def snippet_persona_score():
-    snippet_type = request.args.get('snippet_type')
+def snippet_affinity(snippet_type):
     persona_multiplier = 0
     # calculate a linear combination of persona affinities for the snippet type
     for persona_type in persona_definitions:
@@ -64,8 +69,20 @@ def snippet_persona_score():
         except:
             # ignore if there is no recorded persona score
             pass
+    return persona_multiplier
 
-    return str(persona_multiplier)
+
+def update_snippet_affinities():
+    # every persona definition should include all affinities. step through the
+    # affinities listed in the very first persona definition
+    snippet_affinities = []
+    for snippet_type in persona_definitions[0]['affinities']:
+        affinity_entry = {
+            "snippet_type": snippet_type,
+            "snippet_affinity": snippet_affinity(snippet_type)
+        }
+        snippet_affinities.append(affinity_entry)
+    print('snippet affinities: ' + str(snippet_affinities))
 
 
 if __name__ == "__main__":
