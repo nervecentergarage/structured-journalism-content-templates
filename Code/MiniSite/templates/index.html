@@ -269,10 +269,17 @@ function loadPersonaPreferences(){
   };
 }
 
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
 //notes a particular persona change
 function updatePersona(id,value){
   //save the current persona selection to a cookie
-  document.cookie = id + "=" + value;
+  setCookie(id, value, 2)
   dirty = true
 }
 
