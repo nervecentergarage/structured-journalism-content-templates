@@ -53,8 +53,19 @@ def updatePersona():
     return ""
 
 
-def snippet_persona_score(snippet_type):
-    pass
+@app.route("/snippet_persona_score")
+def snippet_persona_score():
+    snippet_type = request.args.get('snippet_type')
+    persona_multiplier = 0
+    # calculate a linear combination of persona affinities for the snippet type
+    for persona_type in persona_definitions:
+        try:
+            persona_multiplier += persona_type['affinities'][snippet_type] * float(persona_values[persona_type['personaID']])
+        except:
+            # ignore if there is no recorded persona score
+            pass
+
+    return str(persona_multiplier)
 
 
 if __name__ == "__main__":

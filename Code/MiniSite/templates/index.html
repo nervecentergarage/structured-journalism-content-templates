@@ -267,6 +267,11 @@ function loadPersonaPreferences(){
     value = persona_preference['preference_value'];
     document.getElementById(id).value = value;
   };
+
+  //update the server with the persona selections
+  var x = new XMLHttpRequest();
+  x.open("GET", "update-persona?selections=" + document.cookie, true);
+  x.send();
 }
 
 function setCookie(cname, cvalue, exdays) {
