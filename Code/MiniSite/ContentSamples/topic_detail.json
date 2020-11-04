@@ -5,11 +5,11 @@
     "primary_snippets" :[
         {
             "snippetID" : 1,
-            "snippet_type" : "image",
-            "snippet_url" : "https://img.huffingtonpost.com/asset/5f9090ec290000aa09c6a6b7.jpeg?cache=hkdkrzssfs&ops=1778_1000",
+            "snippet_type" : "infographic",
+            "snippet_url" : "https://xkcd.com/1040/large/",
             "snippet_description" : "lorem ipsum....",
-            "title" : "Scientists Think Beetle's Armor Could Provide Clues To Stronger Buildings",
-            "article_url": "https://www.huffpost.com/entry/diabolical-ironclad-beetel_n_5f909004c5b61c185f469aec"
+            "title" : "This Mind-Boggling Infographic Shows Just How Much of The Ocean We Don't See",
+            "article_url": "https://www.sciencealert.com/this-mind-boggling-infographic-shows-just-how-much-of-the-ocean-we-don-t-see"
         },
         {
             "snippetID" : 2,
@@ -21,11 +21,11 @@
         },
         {
             "snippetID" : 3,
-            "snippet_type" : "text",
-            "snippet_url" : "",
-            "snippet_description" : "MIAMI (AP) \u2014 Epsilon has strengthened into a hurricane, the 10th of the Atlantic season, as it approaches Bermuda on Thursday.\nA tropical storm watch is in effect for Bermuda and residents have been urged to closely monitor the storm.\n11 PM AST Tuesday, October 20 Key Messages for Hurricane #Epsilon.\nhttps://t.co/22MmuRtUyj pic.twitter.com/owzBtcSrjr \u2014 National Hurricane Center (@NHC_Atlantic) October 21, 2020The Miami-based hurricane center said Epsilon had maximum sustained winds of 75 mph late Tuesday.\nThis year\u2019s hurricane season has had so many storms that the Hurricane Center has turned to the Greek alphabet for storm names after running out of official names.",
-            "title" : "Epsilon Strengthens Into A Hurricane As It Approaches Bermuda",
-            "article_url": "https://www.huffpost.com/entry/hurricane-epsilon_n_5f8fe18fc5b61c185f4563d5"
+            "snippet_type" : "video",
+            "snippet_url" : "https://www.euronews.com/embed/1258022",
+            "snippet_description" : "lorem ipsum....",
+            "title" : "The dangers of marine litter - and the innovative methods to combat it",
+            "article_url": "https://www.euronews.com/2020/10/21/the-dangers-of-marine-litter-and-the-innovative-methods-to-combat-it"
         }
     ],
     "secondary_snippets" :[
