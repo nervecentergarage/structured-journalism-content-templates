@@ -114,7 +114,12 @@ and is wrapped around the whole page content, except for the footer in this exam
         {% if snippet['snippet_type'] == 'image' %}
         <img src="{{snippet['snippet_url']}}"/>
 
-        {% elif snippet['snippet_type'] == 'graphic' %}
+        {% elif snippet['snippet_type'] == 'graph' %}
+        <a target="_blank" href="{{snippet['snippet_url']}}">
+          <img class="img-graphic" src="{{snippet['snippet_url']}}" alt="Forest">
+        </a>
+
+        {% elif snippet['snippet_type'] == 'infographic' %}
         <a target="_blank" href="{{snippet['snippet_url']}}">
           <img class="img-graphic" src="{{snippet['snippet_url']}}" alt="Forest">
         </a>

@@ -5,15 +5,24 @@ from http.cookies import SimpleCookie
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
+# define the types of snippets recognized by the app
+snippet_types = ["image", "video", "graph", "table", "audio", "infographic", "text"]
+
 # used to store persona preference selections from the user
 persona_values = {}
 
 # used to store the calculated affinities that the current user has for each snippet type
-snippet_affinities = []
+snippet_affinities = {}
 
 # read in definitions of the persona definitions
 with open('ContentSamples/personas.json') as f:
     persona_definitions = json.load(f)
+
+
+# read in topic summaries from a theme
+with open('ContentSamples/theme.json') as f:
+    themes = json.load(f)
+    topics = themes[0]['topics']
 
 
 @app.route("/")
@@ -21,11 +30,6 @@ def index():
     # read in personas
     with open('ContentSamples/personas.json') as f:
         personas = json.load(f)
-
-    # read in topic summaries from a theme
-    with open('ContentSamples/theme.json') as f:
-        theme = json.load(f)
-        topics = theme[0]['topics']
 
     return render_template("index.html", personas=personas, topics=topics)
 
@@ -56,6 +60,7 @@ def updatePersona():
     print("persona updated: " + str(persona_values))
 
     update_snippet_affinities()
+    add_score_to_topics()
 
     return ""
 
@@ -73,16 +78,27 @@ def snippet_affinity(snippet_type):
 
 
 def update_snippet_affinities():
-    # every persona definition should include all affinities. step through the
-    # affinities listed in the very first persona definition
-    snippet_affinities = []
-    for snippet_type in persona_definitions[0]['affinities']:
-        affinity_entry = {
-            "snippet_type": snippet_type,
-            "snippet_affinity": snippet_affinity(snippet_type)
-        }
-        snippet_affinities.append(affinity_entry)
+
+    for snippet_type in snippet_types:
+        snippet_affinities[snippet_type] = snippet_affinity(snippet_type)
+
     print('snippet affinities: ' + str(snippet_affinities))
+
+
+def add_score_to_topics():
+    # adds a topic score to each topic in the theme
+
+    # step through the topic summaries in the theme
+    for topic_summary in topics:
+        # score each of the snippet types in the theme
+        topic_score = 0
+        for snippet_type in snippet_types:
+            topic_score += topic_summary[snippet_type] * snippet_affinities[snippet_type]
+
+        topic_summary['score'] = topic_score
+
+    print('topic scores: ' + str(topics))
+    return topics
 
 
 if __name__ == "__main__":
