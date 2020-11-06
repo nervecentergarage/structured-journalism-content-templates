@@ -2,6 +2,10 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- needed for modal warning box-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
 
 /* main content */
@@ -232,6 +236,23 @@
 
 <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright DXC Technology</div>
 
+  <!-- modal information box -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <header class="w3-container w3-teal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Information</h2>
+      </header>
+      <div class="w3-container">
+        <p>Just a moment while I update your page to fit your preferences...</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+
 <script>
 
 //keeps track of persona changes that need to be saved
@@ -307,8 +328,13 @@ function savePersonaSelections(){
 //reloads the page so that the new persona selections will be displayed
 function updateDisplay(){
   //let the user know that the page is being updated
+  document.getElementById('id01').style.display='block';
 
-  location.reload();
+  //wait a few seconds then reload the screen
+  setTimeout(function () {
+        location.reload();
+    }, 5000);
+
 }
 </script>
 
