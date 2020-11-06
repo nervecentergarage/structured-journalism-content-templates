@@ -31,7 +31,10 @@ def index():
     with open('ContentSamples/personas.json') as f:
         personas = json.load(f)
 
-    return render_template("index.html", personas=personas, topics=topics)
+    # score and sort the topics for display
+    scored_topics = add_score_to_topics()
+    sorted_scored_topics = sorted(scored_topics, key=lambda i: i['score'], reverse=True)
+    return render_template("index.html", personas=personas, topics=sorted_scored_topics)
 
 
 @app.route("/topic")
@@ -59,8 +62,8 @@ def updatePersona():
 
     print("persona updated: " + str(persona_values))
 
+    # update the individual snippet affinities based on the current persona preferences
     update_snippet_affinities()
-    add_score_to_topics()
 
     return ""
 
@@ -93,7 +96,11 @@ def add_score_to_topics():
         # score each of the snippet types in the theme
         topic_score = 0
         for snippet_type in snippet_types:
-            topic_score += topic_summary[snippet_type] * snippet_affinities[snippet_type]
+            try:
+                topic_score += topic_summary[snippet_type] * snippet_affinities[snippet_type]
+            except:
+                # ignore if there are no affinities yet recorded
+                pass
 
         topic_summary['score'] = topic_score
 

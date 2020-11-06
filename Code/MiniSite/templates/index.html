@@ -260,6 +260,7 @@ function personaPreferences(){
 }
 
 //loads persona preferences from cookies into the UI display
+//and updates the server with persona preferences
 function loadPersonaPreferences(){
   //step through each persona preference and update the display
   for (persona_preference of personaPreferences()){
@@ -296,8 +297,18 @@ function savePersonaSelections(){
     x.open("GET", "update-persona?selections=" + document.cookie, true);
     x.send();
 
-    dirty = false
+    dirty = false;
+
+    //update the page with the content arranged according to the persona selections
+    updateDisplay();
   }
+}
+
+//reloads the page so that the new persona selections will be displayed
+function updateDisplay(){
+  //let the user know that the page is being updated
+
+  location.reload();
 }
 </script>
 
