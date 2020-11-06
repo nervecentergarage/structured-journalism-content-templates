@@ -27,6 +27,12 @@ with open('ContentSamples/theme.json') as f:
 
 @app.route("/")
 def index():
+    # initialize the application from persona preferences stored on the client side
+    return render_template("index.html")
+
+
+@app.route("/theme")
+def theme():
     # read in personas
     with open('ContentSamples/personas.json') as f:
         personas = json.load(f)
@@ -34,7 +40,7 @@ def index():
     # score and sort the topics for display
     scored_topics = add_score_to_topics()
     sorted_scored_topics = sorted(scored_topics, key=lambda i: i['score'], reverse=True)
-    return render_template("index.html", personas=personas, topics=sorted_scored_topics)
+    return render_template("theme.html", personas=personas, topics=sorted_scored_topics)
 
 
 @app.route("/topic")
