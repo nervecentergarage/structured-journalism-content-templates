@@ -38,9 +38,7 @@ def theme():
         personas = json.load(f)
 
     # score and sort the topics for display
-    scored_topics = add_score_to_topics()
-    sorted_scored_topics = sorted(scored_topics, key=lambda i: i['score'], reverse=True)
-    return render_template("theme.html", personas=personas, topics=sorted_scored_topics)
+    return render_template("theme.html", personas=personas, topics=scored_sorted_topics())
 
 
 @app.route("/topic")
@@ -52,7 +50,7 @@ def topic():
         primary_snippets = topic_detail['primary_snippets']
         secondary_snippets = topic_detail['secondary_snippets']
 
-    return render_template("topic.html", primary_snippets=primary_snippets, secondary_snippets=secondary_snippets)
+    return render_template("topic.html", primary_snippets=scored_sorted_snippets(primary_snippets), secondary_snippets=scored_sorted_snippets(secondary_snippets))
 
 
 @app.route("/update-persona")
@@ -94,7 +92,7 @@ def update_snippet_affinities():
     print('snippet affinities: ' + str(snippet_affinities))
 
 
-def add_score_to_topics():
+def scored_sorted_topics():
     # adds a topic score to each topic in the theme
 
     # step through the topic summaries in the theme
@@ -110,8 +108,21 @@ def add_score_to_topics():
 
         topic_summary['score'] = topic_score
 
-    print('topic scores: ' + str(topics))
-    return topics
+    output_topics = sorted(topics, key=lambda i: i['score'], reverse=True)
+
+    print('scored, sorted topics: ' + str(output_topics))
+    return output_topics
+
+
+def scored_sorted_snippets(snippets):
+    # scores and sorts snippets for a topic based on the given snippets and snippet affinities
+
+    # step through each snippet in the list and assign an affinity
+    for snippet in snippets:
+        snippet['score'] = snippet_affinity(snippet['snippet_type'])
+
+    # return sorted the snippets based on affinity
+    return sorted(snippets, key=lambda i: i['score'], reverse=True)
 
 
 if __name__ == "__main__":
