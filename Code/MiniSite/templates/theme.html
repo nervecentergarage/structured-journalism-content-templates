@@ -170,6 +170,27 @@
   cursor: pointer;
 }
 
+/* spinning loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid gray;
+  border-bottom: 16px solid gray;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 </style>
   <!--list of articles-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -239,17 +260,13 @@
   <!-- modal information box -->
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-animate-zoom">
-      <header class="w3-container w3-teal">
-        <span onclick="document.getElementById('id01').style.display='none'"
-        class="w3-button w3-display-topright">&times;</span>
+      <header class="w3-container w3-gray">
         <h2>Information</h2>
       </header>
       <div class="w3-container">
+        <div class="loader"></div>
         <p>Just a moment while I update your page to fit your preferences...</p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
-      </footer>
     </div>
   </div>
 
