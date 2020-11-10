@@ -6,7 +6,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # define the types of snippets recognized by the app
-snippet_types = ["image", "video", "graph", "table", "audio", "infographic", "text"]
+snippet_types = ["image", "video", "graph", "table", "audio", "graphic", "text"]
 
 # used to store persona preference selections from the user
 persona_values = {}

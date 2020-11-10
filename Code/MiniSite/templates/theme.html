@@ -118,12 +118,12 @@
 
 .theme {
   background-color:#c92c53;
-  color: white;
+  color:black;
   font-size: 5vw;
   font-weight: bold;
   margin: 0 auto;
-  padding: 0px;
-  width: 100%;
+  padding: 10px;
+  width: 50%;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -232,7 +232,7 @@
     <h2>Lorum Ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
     {% set num_cols = 3 %}
-    {% set num_topics = topics|length%}
+    {% set num_topics = topics|length %}
     {% set num_rows = (num_topics/num_cols + 0.999)|int %}
     {% for row in range(0,num_rows) %}
       <div class="w3-row-padding">

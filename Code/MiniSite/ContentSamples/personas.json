@@ -9,7 +9,7 @@
             "graph" : 1.0,
             "table" : 1.0,
             "audio" : 0.0,
-            "infographic" : 0.75,
+            "graphic" : 0.75,
             "text" : 0.5
         }
     },
@@ -23,7 +23,7 @@
             "graph" : 0.7,
             "table" : 0.3,
             "audio" : 0.0,
-            "infographic" : 1.0,
+            "graphic" : 1.0,
             "text" : 0.5
         }
     },
@@ -37,7 +37,7 @@
             "graph" : 0.0,
             "table" : 0.0,
             "audio" : 1.0,
-            "infographic" : 0.1,
+            "graphic" : 0.1,
             "text" : 0.7
         }
     },
@@ -51,7 +51,7 @@
             "graph" : 0.5,
             "table" : 1.0,
             "audio" : 0.0,
-            "infographic" : 0.75,
+            "graphic" : 0.75,
             "text" : 1.0
         }
     },
@@ -65,7 +65,7 @@
             "graph" : 1.0,
             "table" : 0.5,
             "audio" : 0.0,
-            "infographic" : 0.75,
+            "graphic" : 0.75,
             "text" : 0.0
         }
     }
