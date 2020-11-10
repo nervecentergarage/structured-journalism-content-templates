@@ -5,7 +5,7 @@
     "primary_snippets" :[
         {
             "snippetID" : 1,
-            "snippet_type" : "graphic",
+            "snippet_type" : "img-graphic",
             "snippet_url" : "https://xkcd.com/1040/large/",
             "snippet_description" : "lorem ipsum....",
             "title" : "This Mind-Boggling Infographic Shows Just How Much of The Ocean We Don't See",
