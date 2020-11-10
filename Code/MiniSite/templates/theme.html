@@ -241,8 +241,8 @@
         {% for index in range(start_topic_index,end_topic_index) %}
           {% if not(index > num_topics -1) %}
             <div class="w3-third">
-              <h2><a href="topic?id={{topics[index]['topicID']}}">{{topics[index]['title']}}</a></h2>
-              <p>{{topics[index]['summary']}}</p>
+              <h2 style="font-size:1.25vw; font-weight: bold;"><a href="topic?id={{topics[index]['topicID']}}">{{topics[index]['title']}}</a></h2>
+              <p style="font-size:1vw;">{{topics[index]['summary']}}</p>
             </div>
           {% endif %}
         {% endfor %}
@@ -256,7 +256,7 @@
   </div>
 </div>
 
-<div style="background-color:#c92c53; color: white; text-align:center;padding:10px;margin-top:7px;">© copyright DXC Technology</div>
+<div style="background-color:#c92c53; color:white; text-align:center;padding:10px;margin-top:7px;">© copyright DXC Technology</div>
 
   <!-- modal information box -->
   <div id="id01" class="w3-modal">

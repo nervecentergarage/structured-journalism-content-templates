@@ -105,8 +105,8 @@ and is wrapped around the whole page content, except for the footer in this exam
         </audio>
 
         {% endif %}
-        <p style="font-size:2.5vw;">{{snippet['title']}}</p>
-        <p style="font-size:2.5vw;">{{snippet['snippet_description']}}</p>
+        <p style="font-size:1vw; font-weight: bold;">{{snippet['title']}}</p>
+        <p style="font-size:0.85vw;">{{snippet['snippet_description']}}</p>
         <div class="w3-row">
           <div class="w3-col m8 s12">
             <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button></p>
@@ -135,7 +135,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <img class="img-graphic" src="{{snippet['snippet_url']}}" alt="Forest">
         </a>
 
-        {% elif snippet['snippet_type'] == 'infographic' %}
+        {% elif snippet['snippet_type'] == 'graphic' %}
         <a target="_blank" href="{{snippet['snippet_url']}}">
           <img class="img-graphic" src="{{snippet['snippet_url']}}" alt="Forest">
         </a>
@@ -152,8 +152,8 @@ and is wrapped around the whole page content, except for the footer in this exam
         </audio>
 
         {% endif %}
-        <p style="font-size:2.5vw;">{{snippet['title']}}</p>
-        <p style="font-size:2.5vw;">{{snippet['snippet_description']}}</p>
+        <p style="font-size:1vw; font-weight: bold;">{{snippet['title']}}</p>
+        <p style="font-size:0.85vw;">{{snippet['snippet_description']}}</p>
         <div class="w3-row">
           <div class="w3-col m8 s12">
             <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button></p>
@@ -193,7 +193,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Footer -->
 <footer class="w3-footer w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="location.href='/';">Back</button>
-  <p>Powered by <a href="https://www.dxc.com" target="_blank">DXC Technology</a></p>
+  <p style= "color: white;">Powered by <a href="https://www.dxc.com" target="_blank">DXC Technology</a></p>
 </footer>
 
 </body>

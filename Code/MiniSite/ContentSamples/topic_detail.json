@@ -5,8 +5,8 @@
     "primary_snippets" :[
         {
             "snippetID" : 1,
-            "snippet_type" : "img-graphic",
-            "snippet_url" : "https://xkcd.com/1040/large/",
+            "snippet_type" : "graphic",
+            "snippet_url" : "https://www.sciencealert.com/images/2016-06/processed/lakes_and_oceans_large_1024.jpg",
             "snippet_description" : "lorem ipsum....",
             "title" : "This Mind-Boggling Infographic Shows Just How Much of The Ocean We Don't See",
             "article_url": "https://www.sciencealert.com/this-mind-boggling-infographic-shows-just-how-much-of-the-ocean-we-don-t-see"
