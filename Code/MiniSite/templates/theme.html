@@ -30,9 +30,9 @@
 }
 
 .main {
-  background-color:#f3f9ff;
   float:left;
   width:60%;
+  height: 100%;
   padding:0 20px;
 }
 .right {
@@ -60,7 +60,7 @@
   font-size: 16px;
   line-height: 50px;
   border-radius: 25px;
-  background-color: #f1f1f1;
+  background-color: #f3f9ff;
 }
 
 .chip img {
@@ -74,7 +74,7 @@
 /* persona button */
 
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #bed0e5;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -91,7 +91,7 @@
   display: none;
   position: absolute;
   right: 0;
-  background-color: #f9f9f9;
+  background-color: #f3f9ff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -106,14 +106,14 @@
 
 .dropdown-content a:hover {background-color: #f1f1f1;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #bed0e5;}
 
 /* banner */
 .image-container {
   background-image: url("/static/img_nature.jpg");
   background-size: cover;
   position: relative;
-  height: 200px;
+  height: 300px;
 }
 
 .theme {
@@ -159,7 +159,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #bed0e5;
   cursor: pointer;
 }
 
@@ -167,7 +167,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4CAF50;
+  background:#bed0e5;
   cursor: pointer;
 }
 
@@ -175,12 +175,16 @@
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid gray;
-  border-bottom: 16px solid gray;
+  border-top: 16px solid #bed0e5;
+  border-bottom: 16px solid #bed0e5;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+}
+
+.modal-container {
+  background-color: #bed0e5;
 }
 
 @-webkit-keyframes spin {
@@ -192,6 +196,17 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color:#c92c53;
+  color:white;
+  text-align: center;
+  padding:10px;
+}
 </style>
   <!--list of articles-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -199,12 +214,13 @@
 </head>
 <body style="font-family:Verdana;color:black;" onload="loadPersonaPreferences();">
 
-<div style="background-color:#f3f9ff;padding:15px;text-align:center;">
+<div style="padding:15px;text-align:center;">
     <div class="image-container">
       <div class="dropdown" style="float:right;" onmouseleave="javascript:savePersonaSelections()">
         <div class="chip">
-          <img src="static/bot-avatar.png" alt="Person" width="96" height="96">
-          &lt;/&gt;
+          <img src="static/persona_bot.jpg" alt="Person" width="96" height="96">
+          <!--&lt;/&gt;-->
+          How do you like your news?
         </div>
         <div class="dropdown-content"  id="personas">
           {% for persona in personas %}
@@ -220,7 +236,7 @@
     </div>
 </div>
 
-<div style="overflow:auto; background-color:#f3f9ff">
+<div style="overflow:auto">
   <div class="menu">
     <a href="#">Link 1</a>
     <a href="#">Link 2</a>
@@ -256,12 +272,12 @@
   </div>
 </div>
 
-<div style="background-color:#c92c53; color:white; text-align:center;padding:10px;margin-top:7px;">© copyright DXC Technology</div>
+<footer id="footer">© copyright DXC Technology</footer>
 
   <!-- modal information box -->
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-animate-zoom">
-      <header class="w3-container w3-gray">
+      <header class="w3-container modal-container">
         <h2>Information</h2>
       </header>
       <div class="w3-container">
