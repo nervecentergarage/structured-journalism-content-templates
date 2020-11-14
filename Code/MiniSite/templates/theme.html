@@ -13,12 +13,14 @@
 * {
   box-sizing: border-box;
 }
-/*
-body {
-    min-height: 100%;
-    height: auto;
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #f3f9ff;
 }
-*/
+
 .menu {
   float:left;
   width:20%;
@@ -54,14 +56,9 @@ body {
   .menu, .main, .right {
     width:100%;
   }
-}
 
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  footer {
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
+  .image-container {
+    max-height: 10em;
   }
 }
 
@@ -71,10 +68,10 @@ body {
   display: inline-block;
   padding: 0 25px;
   height: 50px;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 50px;
   border-radius: 25px;
-  background-color: #f3f9ff;
+  background-color: #bed0e5;
 }
 
 .chip img {
@@ -91,7 +88,7 @@ body {
   background-color: #bed0e5;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 1em;
   border: none;
   cursor: pointer;
 }
@@ -127,7 +124,7 @@ body {
   background-image: url("/static/img_nature.jpg");
   background-size: cover;
   position: relative;
-  height: 300px;
+  height: 18.75em;
 }
 
 .theme {
@@ -212,14 +209,14 @@ body {
 }
 
 #footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
   background-color:#c92c53;
   color:white;
   text-align: center;
-  padding:10px;
+  padding: 10px;
 }
 </style>
   <!--list of articles-->
@@ -250,7 +247,7 @@ body {
     </div>
 </div>
 
-<div style="overflow:auto">
+<div style="overflow:auto; height: 100%">
   <div class="menu">
     <a href="#">Link 1</a>
     <a href="#">Link 2</a>
@@ -271,8 +268,8 @@ body {
         {% for index in range(start_topic_index,end_topic_index) %}
           {% if not(index > num_topics -1) %}
             <div class="w3-third">
-              <h2 style="font-size:1.25vw; font-weight: bold;"><a href="topic?id={{topics[index]['topicID']}}">{{topics[index]['title']}}</a></h2>
-              <p style="font-size:1vw;">{{topics[index]['summary']}}</p>
+              <h2 style="font-size:1.25em; font-weight: bold;"><a href="topic?id={{topics[index]['topicID']}}">{{topics[index]['title']}}</a></h2>
+              <p style="font-size:1em;">{{topics[index]['summary']}}</p>
             </div>
           {% endif %}
         {% endfor %}
