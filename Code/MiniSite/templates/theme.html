@@ -76,6 +76,11 @@ html, body {
     padding: 0%;
   }
 
+  .main {
+    overflow:scroll;
+    height: 100%;
+  }
+
   .image-container {
     max-height: 10em;
   }
@@ -269,13 +274,13 @@ html, body {
     </div>
 </div>
 
-<div class = "wrapper" style= "overflow:scroll; height: 100%">
+<div class = "wrapper" style= "overflow:auto; height: 100%">
   <div class="sponsor">
     <h2>Sponsor Name--needs ref</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
   </div>
 
-  <div class="main" style= "overflow:scroll">
+  <div class="main">
     <h2>Welcome</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
     {% set num_cols = 3 %}
