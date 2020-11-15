@@ -270,19 +270,19 @@ html, body {
           <br/>
         </div>
       </div>
-      <div class="theme">THEME: Can hold upto 40 characters</div>
+      <div id= "theme" class="theme">THEME: Can hold upto 40 characters</div>
     </div>
 </div>
 
 <div class = "wrapper" style= "overflow:auto; height: 100%">
   <div class="sponsor">
-    <h2>Sponsor Name--needs ref</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <h2 id= "sponsor_name">Sponsor Name--needs ref</h2>
+    <p id= "sponsor_about_us">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
   </div>
 
   <div class="main">
     <h2>Welcome</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p id= "welcome">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
     {% set num_cols = 3 %}
     {% set num_topics = topics|length %}
     {% set num_rows = (num_topics/num_cols + 0.999)|int %}
@@ -303,10 +303,10 @@ html, body {
   </div>
 
     <div class="menu">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
+      <a id= "link_1" href="#">Link 1</a>
+      <a id= "link_2" href="#">Link 2</a>
+      <a id= "link_3" href="#">Link 3</a>
+      <a id= "link_4" href="#">Link 4</a>
     </div>
 </div>  
 
