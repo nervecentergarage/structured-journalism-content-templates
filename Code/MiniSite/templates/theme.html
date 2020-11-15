@@ -21,6 +21,39 @@ html, body {
     background: #f3f9ff;
 }
 
+.sponsor {
+  background-color:#bed0e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+.sponsor h2{
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.sponsor p{
+  font-size: 1em;
+}
+
+.main {
+  float:left;
+  width:60%;
+  height: 100%;
+  padding:0 20px;
+}
+
+.main h2 {
+  padding-left: 10px;
+}
+
+.main p {
+  padding-left: 10px;
+}
+
 .menu {
   float:left;
   width:20%;
@@ -36,25 +69,11 @@ html, body {
   color:black;
 }
 
-.main {
-  float:left;
-  width:60%;
-  height: 100%;
-  padding:0 20px;
-}
-.right {
-  background-color:#bed0e5;
-  float:left;
-  width:20%;
-  padding:15px;
-  margin-top:7px;
-  text-align:center;
-}
-
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu, .main, .sponsor {
     width:100%;
+    padding: 0%;
   }
 
   .image-container {
@@ -130,18 +149,20 @@ html, body {
 .theme {
   background-color:#c92c53;
   color:black;
-  font-size: 5vw;
+  font-size: 3.25vw;
   font-weight: bold;
   margin: 0 auto;
   padding: 10px;
-  width: 50%;
+  width: auto;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-right: -50%;
   transform: translate(-50%, -50%);
   mix-blend-mode: screen;
 }
+
 
 /* slider */
 .slidecontainer {
@@ -211,6 +232,7 @@ html, body {
 #footer {
   position: relative;
   bottom: 0;
+  margin-top: 7px;
   width: 100%;
   height: 2.5rem;
   background-color:#c92c53;
@@ -243,20 +265,18 @@ html, body {
           <br/>
         </div>
       </div>
-      <div class="theme">THEME</div>
+      <div class="theme">THEME: Can hold upto 40 characters</div>
     </div>
 </div>
 
 <div style="overflow:auto; height: 100%">
-  <div class="menu">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 4</a>
+  <div class="sponsor">
+    <h2>Sponsor Name--needs ref</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
   </div>
 
   <div class="main">
-    <h2>Lorum Ipsum</h2>
+    <h2>Welcome</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
     {% set num_cols = 3 %}
     {% set num_topics = topics|length %}
@@ -277,11 +297,13 @@ html, body {
     {% endfor %}
   </div>
 
-  <div class="right">
-    <h2>Lorum Ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-  </div>
-</div>
+    <div class="menu">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </div>
+</div>  
 
 <footer id="footer">© copyright DXC Technology</footer>
 
