@@ -303,10 +303,9 @@ html, body {
   </div>
 
     <div class="menu">
-      <a id= "link_1" href="#">Link 1</a>
-      <a id= "link_2" href="#">Link 2</a>
-      <a id= "link_3" href="#">Link 3</a>
-      <a id= "link_4" href="#">Link 4</a>
+      {% for link in sponsor['menu_links'] %}
+        <a id= "{{link['id']}}" href="{{link['link_source']}}">{{link['link_text']}}</a>
+      {% endfor %}
     </div>
 </div>  
 

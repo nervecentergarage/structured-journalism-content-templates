@@ -24,6 +24,11 @@ with open('ContentSamples/theme.json') as f:
     themes = json.load(f)
     topics = themes[0]['topics']
 
+# read in sponsor data for a theme
+with open('ContentSamples/sponsor.json') as f:
+    sponsors = json.load(f)
+    sponsor = sponsors[0]
+
 
 @app.route("/")
 def index():
@@ -38,7 +43,7 @@ def theme():
         personas = json.load(f)
 
     # score and sort the topics for display
-    return render_template("theme.html", personas=personas, topics=scored_sorted_topics())
+    return render_template("theme.html", personas=personas, sponsor=sponsor, topics=scored_sorted_topics())
 
 
 @app.route("/topic")

@@ -3,28 +3,32 @@
         "sponsorID": "1",
         "sponsor_name": "Applied AI Center of Excellence",
         "sponsor_about_us": "The Applied AI CoE exists to show clients how the they can apply AI to their needs today, and make a differnece for their tomorrow.",
-        "menu_links": {
-            "link_1": {
+        "menu_links": [
+            {
+                "id": "link1",
                 "description": "Main DXC website",
                 "link_source": "https://www.dxc.technology/",
                 "link_text": "DXC.technology"
             },
-            "link_2": {
+            {
+                "id": "link2",
                 "description": "Analytics Blogs",
                 "link_source": "https://blogs.dxc.technology/category/analytics/",
                 "link_text": "DXC Blogs"
             },
-            "link_3": {
+            {
+                "id": "link3",
                 "description": "Building human-centered AI",
                 "link_source": "https://blogs.dxc.technology/2020/09/08/building-human-centered-ai/",
                 "link_text": "Building human-centered AI"
             },
-            "link_4": {
+            {
+                "id": "link4",
                 "description": "Contact DXC",
                 "link_source": "https://www.dxc.technology/contact_us",
                 "link_text": "Contact Us"
             }
-        },
+        ],
         "theme": "AI Today: How Artifical Intelligence is shaping our present",
         "theme_description": "We're looking for articles that are mostly positive about how AI is making an impact on people's lives in 2020 and the next 12 months",
         "welcome": "Humanity has gone through multiple revolutions: agricultural, industrial, informational, etc... We are now at the beginning of the AI revolution, and we are in an interesting place. We talk a lot about and imagine how AI's future potential could affect our lives, but we don't always recognize how AI is affecting us now. The Applied AI Center of Excellence is sponsoring this collection to bring together multiple stories about how AI affects people today."
