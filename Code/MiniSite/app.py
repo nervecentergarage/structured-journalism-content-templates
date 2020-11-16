@@ -49,8 +49,14 @@ def topic():
         topic_detail = json.load(f)
         primary_snippets = topic_detail['primary_snippets']
         secondary_snippets = topic_detail['secondary_snippets']
+        title = topic_detail['title']
+        summary = topic_detail['summary']
 
-    return render_template("topic.html", primary_snippets=scored_sorted_snippets(primary_snippets), secondary_snippets=scored_sorted_snippets(secondary_snippets))
+    return render_template("topic.html",
+                           title=title,
+                           summary=summary,
+                           primary_snippets=scored_sorted_snippets(primary_snippets),
+                           secondary_snippets=scored_sorted_snippets(secondary_snippets))
 
 
 @app.route("/update-persona")
