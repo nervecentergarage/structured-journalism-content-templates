@@ -282,7 +282,7 @@ html, body {
 
   <div class="main">
     <h2>Welcome</h2>
-    <p id= "welcome">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p id= "welcome">{{sponsor['welcome']}}</p>
     {% set num_cols = 3 %}
     {% set num_topics = topics|length %}
     {% set num_rows = (num_topics/num_cols + 0.999)|int %}

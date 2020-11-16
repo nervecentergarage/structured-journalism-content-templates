@@ -39,6 +39,7 @@ def index():
 @app.route("/theme")
 def theme():
     # read in personas
+    #TODO: this should be deleted, repeated above
     with open('ContentSamples/personas.json') as f:
         personas = json.load(f)
 
