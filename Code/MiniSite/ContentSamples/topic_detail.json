@@ -1,50 +1,33 @@
 {
-    "topicID" : "2",
-    "title" : "Salinity",
-    "summary" : "lorem ipsum....",
-    "primary_snippets" :[
-        {
-            "snippetID" : 1,
-            "snippet_type" : "graphic",
-            "snippet_url" : "https://www.sciencealert.com/images/2016-06/processed/lakes_and_oceans_large_1024.jpg",
-            "snippet_description" : "lorem ipsum....",
-            "title" : "This Mind-Boggling Infographic Shows Just How Much of The Ocean We Don't See",
-            "article_url": "https://www.sciencealert.com/this-mind-boggling-infographic-shows-just-how-much-of-the-ocean-we-don-t-see"
-        },
-        {
-            "snippetID" : 2,
-            "snippet_type" : "text",
-            "snippet_url" : "",
-            "snippet_description" : "Now scientists are studying what the bug\u2019s crush-resistant shell could teach them about designing stronger planes and buildings.\nOther local beetle species shattered under one-third as much pressure.\nResearchers then used electron microscopes and CT scans to examine the beetle\u2019s exoskeleton and figure out what made it so strong.\nIn the structure of the beetle\u2019s shell, nature offers an \u201cinteresting and elegant\u201d alternative, Zavattieri said.\nScientists say the armor of the seemingly indestructible beetle could offer clues for designing stronger planes and buildings.",
-            "title" : "Scientists Think Beetle's Armor Could Provide Clues To Stronger Buildings",
-            "article_url": "https://www.huffpost.com/entry/diabolical-ironclad-beetel_n_5f909004c5b61c185f469aec"
-        },
-        {
-            "snippetID" : 3,
-            "snippet_type" : "video",
-            "snippet_url" : "https://www.euronews.com/embed/1258022",
-            "snippet_description" : "lorem ipsum....",
-            "title" : "The dangers of marine litter - and the innovative methods to combat it",
-            "article_url": "https://www.euronews.com/2020/10/21/the-dangers-of-marine-litter-and-the-innovative-methods-to-combat-it"
-        }
-    ],
-    "secondary_snippets" :[
-        {
-            "snippetID" : 4,
-            "snippet_type" : "image",
-            "snippet_url" : "https://img.huffingtonpost.com/asset/5f8fe3c9240000450461e220.png?cache=uhkr3fmibq&ops=1778_1000",
-            "snippet_description" : "lorem ipsum....",
-            "title" : "Epsilon Strengthens Into A Hurricane As It Approaches Bermuda",
-            "article_url": "https://www.huffpost.com/entry/hurricane-epsilon_n_5f8fe18fc5b61c185f4563d5"
-        },
-        {
-            "snippetID" : 5,
-            "snippet_type" : "audio",
-            "snippet_url" : "https://audio.guim.co.uk/2020/10/19-48207-gnl.sw.20201020.dw.hivravi.mp3",
-            "snippet_description" : "lorem ipsum....",
-            "title" : "Covid-19: what can we learn from the HIV/Aids pandemic? – podcast | World news | The Guardian",
-            "article_url": "https://www.theguardian.com/world/audio/2020/oct/20/covid-19-what-can-we-learn-from-hiv-aids-pandemic-podcast"
-        }
-    ],
-    "tags": ["Travel", "New York", "London", "IKEA", "Norway", "Ideas", "Baby", "News", "Clothing", "Sports", "Games"]
+   "summary":"The Pistons received an influx of youth Wednesday, as they added four rookies in Killian Hayes, Isaiah Stewart, Saddiq Bey and Saben Lee, who will be a two-way player. Hayes and Stewart are both 19, and Bey and Lee are 21. Last year’s first round draft pick, Sekou Doumbouya, is 20.",
+   "title":"After epic draft haul, here's what Detroit Pistons must do in NBA free agency",
+   "topicID":"4",
+   "primary_snippets":[
+      {
+         "article_url":"https://sports.yahoo.com/epic-draft-haul-heres-detroit-110411658.html?src=rss",
+         "snippetID":"snippet-162",
+         "snippet_description":"The Pistons received an influx of youth Wednesday, as they added four rookies in Killian Hayes, Isaiah Stewart, Saddiq Bey and Saben Lee, who will be a two-way player. Hayes and Stewart are both 19, and Bey and Lee are 21. Last year’s first round draft pick, Sekou Doumbouya, is 20.",
+         "snippet_type":"text",
+         "snippet_url":"",
+         "title":"After epic draft haul, here's what Detroit Pistons must do in NBA free agency"
+      },
+      {
+         "article_url":"http://rssfeeds.usatoday.com/~/639007114/0/usatodaycomsports-topstories~LaVar-Ball-once-said-hed-beat-Michael-Jordan-oneonone-Can-challenge-now-become-a-reality/",
+         "snippetID":"snippet-995",
+         "snippet_description":"Poor LaMelo Ball.\nThat would be his dilemma if LaVar Ball and Michael Jordan finally played one-on-one and settled their beef.\nThe notion, as far-fetched as it might be, surfaced during the NBA draft Wedneday night after LaMelo Ball, LaVar's youngest son, was picked third overall by the Charlotte Hornets, owned by Jordan.\nIn 2017, LaVar Ball told USA TODAY Sports that in his heyday, he “would kill’’ Jordan one-on-one.\nSteve Ezell, an executive producer of \"Ball in the Family,'' a Facebook reality show featuring the Balls, voiced excitement about possibly filming LaVar vs. Jordan for a future episode.",
+         "snippet_type":"image",
+         "snippet_url":"https://www.gannett-cdn.com/presto/2020/02/11/USAT/ebea5508-d3a0-4ce1-97dd-9dbbb4c7715d-XXX_IMG_XXX_OB_6053_JPG_USA__1_1_JLNMTELO.JPG?crop=2999,1687,x1,y24&width=2999&height=1687&format=pjpg&auto=webp",
+         "title":"LaVar Ball once said he'd beat Michael Jordan one-on-one. Can challenge now become a reality?"
+      }
+   ],
+   "secondary_snippets":[
+      {
+         "article_url":"https://sports.yahoo.com/eleven-established-nba-players-more-160012627.html?src=rss",
+         "snippetID":"snippet-130",
+         "snippet_description":"Rozier wants to be a starting point guard, and it appeared he’d get the job when joining Charlotte in free agency last year. But Graham came out of nowhere to supplant him. The Hornets used enough two-point guard lineups to get by. Their backcourt was their strength, which isn’t saying much but isn’t nothing, either.",
+         "snippet_type":"text",
+         "snippet_url":"",
+         "title":"Eleven established NBA players more likely to be on the move after NBA draft"
+      }
+   ]
 }
