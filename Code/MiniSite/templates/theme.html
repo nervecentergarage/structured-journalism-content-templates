@@ -234,18 +234,6 @@ html, body {
   100% { transform: rotate(360deg); }
 }
 
-#footer {
-  position: relative;
-  bottom: 0;
-  margin-top: 7px;
-  width: 100%;
-  height: 2.5rem;
-  background-color:#bb1919;
-  color:white;
-  text-align: center;
-  padding: 10px;
-}
-
 /* this is used to display and wrap the topic summaries */
 .flex-container {
   /* We first create a flex layout context */
@@ -256,7 +244,9 @@ html, body {
    * Remember this is the same as:
    * flex-direction: row;
    * flex-wrap: wrap;
+   * flex: 1 is to push the container to the bottom of the view and create a sticky footer
    */
+  flex: 1;
   flex-flow: row wrap;
 
   /* Then we define how is distributed the remaining space */
@@ -265,6 +255,16 @@ html, body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+#footer {
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  background-color:#bb1919;
+  color:white;
+  text-align: center;
+  padding: 10px;
 }
 </style>
   <!--list of articles-->
@@ -303,9 +303,10 @@ html, body {
     </div>
 </div>
 
-<div class = "wrapper" style= "overflow:auto; height: 100%">
+<div class = "wrapper">
   <div class="sponsor">
-    <h2 id= "sponsor_name">{{sponsor['sponsor_name']}}</h2>
+    <h2 sponsor_name">{{sponsor['sponsor_name']}}</h2>
+  <hr>
     <p id= "sponsor_about_us">{{sponsor['sponsor_about_us']}}</p>
   </div>
 

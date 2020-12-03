@@ -1,1 +1,45 @@
-[{"themeID": 75, "theme": "AI and ML in Today's world", "theme_description": "I and ML are latest trends of todays era. Daily some new discoveries are happening in this field.", "topics": [{"topicID": "259", "images": 3, "videos": 0, "graphs": 0, "tables": 0, "audio": 0, "infographics": 0, "text": 5, "summary": "     A new AI system that monitors video content online as it is viewed and blurs anything unsuitable before youngsters see it has been developed.It is one of a number of tools designed to protect children and teenagers as they explore the internet. But can tech really help solve the problems that tech creates?BBC Click's Lara Lewington reports.Read moreThe BBC has information on what to do if children see something upsetting onlineFor information and support on mental health and suicide, access the BBC Action Line", "title": "Can tech really keep our teenagers safe online?"}, {"topicID": "361", "images": 3, "videos": 0, "graphs": 0, "tables": 0, "audio": 0, "infographics": 0, "text": 5, "summary": "\"The AI module is designed not only to do the obvious stuff, but it learns as it goes along and becomes anticipatory. It can start to build a picture of how likely you are to try a different brand, or to buy chocolate on a Saturday.\"", "title": "How artificial intelligence may be making you buy things"}, {"topicID": "522", "images": 4, "videos": 0, "graphs": 0, "tables": 0, "audio": 0, "infographics": 0, "text": 4, "summary": "Stuart Hogg had a failed attempted kick to touch in the closing moments of the gameAutumn Nations Cup: Scotland v France Scotland: (12) 15 Pens: Weir (5) France: (12) 22 Try: Vakatawa Con: Ramos Pens: Ramos (4) Drop goal: JalibertScotland's Autumn Nations Cup fate is out of their own hands after they fell to a frantic defeat by France at Murrayfield.\nWhen play returned for the penalty, Ramos made it 6-0.\nThe conversion made it 19-12, but a fifth Weir penalty narrowed the gap in quick order.\nScotland: Hogg (c); Kinghorn, Harris, Johnson, Van der Merwe, Weir, Price; Kebble, Brown, Berghan; Cummings, Gray; Ritchie, Watson, M Fagerson.\nFrance: Ramos; Thomas, Vakatawa, Fickou, Rattez; Jalibert, Dupont; Gros, Chat, Bamba; Le Roux, Taofifenua; Cretin, Ollivon (c), AlldrittReplacements: Marchand, Baille, Haouas, Willemse, Woki, Couilloud, Carbonel, Vincent", "title": "Autumn Nations Cup: Scotland 15-22 France"}]}]
+[
+    {
+        "themeID": 75,
+        "theme": "AI and ML in Today's world",
+        "theme_description": "AI and ML are latest trends of todays era. Daily some new discoveries are happening in this field.",
+        "topics": [
+            {
+                "topicID": "259",
+                "images": 3,
+                "videos": 0,
+                "graphs": 0,
+                "tables": 0,
+                "audio": 0,
+                "infographics": 0,
+                "text": 5,
+                "summary": "     A new AI system that monitors video content online as it is viewed and blurs anything unsuitable before youngsters see it has been developed.",
+                "title": "Can tech really keep our teenagers safe online?"
+            },
+            {
+                "topicID": "361",
+                "images": 3,
+                "videos": 0,
+                "graphs": 0,
+                "tables": 0,
+                "audio": 0,
+                "infographics": 0,
+                "text": 5,
+                "summary": "\"The AI module is designed not only to do the obvious stuff, but it learns as it goes along and becomes anticipatory. It can start to build a picture of how likely you are to try a different brand, or to buy chocolate on a Saturday.\"",
+                "title": "How artificial intelligence may be making you buy things"
+            },
+            {
+                "topicID": "522",
+                "images": 4,
+                "videos": 0,
+                "graphs": 0,
+                "tables": 0,
+                "audio": 0,
+                "infographics": 0,
+                "text": 4,
+                "summary": "Stuart Hogg had a failed attempted kick to touch in the closing moments of the gameAutumn Nations Cup",
+                "title": "Autumn Nations Cup: Scotland 15-22 France"
+            }
+        ]
+    }
+]
