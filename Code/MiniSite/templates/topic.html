@@ -144,7 +144,8 @@ and is wrapped around the whole page content, except for the footer in this exam
           <div class="w3-col m8 s12">
             <p>
               <button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button>
-              <button class="w3-button w3-padding-large w3-white w3-border" onclick="pin('static/thumbnail.png')"><b>Pin</b></button>
+              &nbsp;
+              <a data-pin-do="buttonPin" data-pin-tall="true" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.google.com&media=http%3A%2F%2Fsjct.herokuapp.com%2Fstatic%2Fthumbnail.png&description=Next%20stop%3A%20Pinterest"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" /></a>
           </p>
           </div>
           <div class="w3-col m4 w3-hide-small">
@@ -194,7 +195,8 @@ and is wrapped around the whole page content, except for the footer in this exam
           <div class="w3-col m8 s12">
             <p>
               <button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button>
-              <button class="w3-button w3-padding-large w3-white w3-border" onclick="pin('static/thumbnail.png')"><b>Pin</b></button>
+              &nbsp;
+              <a data-pin-do="buttonPin" data-pin-tall="true" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.google.com&media=http%3A%2F%2Fsjct.herokuapp.com%2Fstatic%2Fthumbnail.png&description=Next%20stop%3A%20Pinterest"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" /></a>
             </p>
           </div>
           <div class="w3-col m4 w3-hide-small">
@@ -245,26 +247,12 @@ and is wrapped around the whole page content, except for the footer in this exam
       <div class="w3-container">
         <div class="loader"></div>
         <p>Share your story on Pinterest</p>
+        <a data-pin-do="buttonPin" data-pin-tall="true" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=https%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" /></a>
         <img id="thumbnail" class="thumbnail" src="">
         <p><button onclick="closePin()">Close</button></p>
       </div>
     </div>
   </div>
-
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
-<script>
-  function pin(img){
-    // allow the user to pin a thumbnail to pinterest
-    // start by showing them a modal box
-    //
-    document.getElementById('id01').style.display='block';
-
-    //show the appropriate image thumbnail
-    document.getElementById("thumbnail").src = img;
-  }
-  function closePin(){
-  // close the pinterest pin model box
-    document.getElementById('id01').style.display='none';
-  }
-</script>
 </html>
