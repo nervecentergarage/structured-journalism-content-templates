@@ -145,7 +145,7 @@ html, body {
 
 /* banner */
 .image-container {
-  background-image: url("/static/img_nature.jpg");
+  background-image: url("/static/Website banner 01_v2.jpg");
   background-size: cover;
   position: relative;
   height: 18.75em;
@@ -282,17 +282,17 @@ html, body {
           How do you like your news?
         </div>
         <div class="dropdown-content"  id="personas">
-          <p style="margin:0"><b>Preset Preferences</b></p>
+          <p style="margin-bottom:0"><b>Preset Preferences</b></p>
           {% for persona in personas if persona.preset %}
-          <div class="radiobutton">
+          <div style="text-align: left; padding-left: 20px;" class="radiobutton">
             <input type="radio" name="Preset Prefereneces" value="100" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
             <label for="{{persona['persona']}}">{{persona['persona']}}</label>
           </div>
           {% endfor %}
-          <p style="margin:0"><b>Custom Preferences</b></p>
+          <p style="margin-bottom: 0"><b>Custom Preferences</b></p>
           {% for persona in personas if not persona.preset %}
           <div class="slidecontainer">
-            <p>{{persona['persona']}}</p>
+            <p style="margin: 2px">{{persona['persona']}}</p>
             <input type="range" min="0" max="100" value="0" class="slider" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
           </div>
           {% endfor %}
