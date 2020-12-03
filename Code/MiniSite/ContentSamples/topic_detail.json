@@ -10,7 +10,7 @@
          "snippet_type":"image",
          "snippet_url":"https://i.guim.co.uk/img/media/f81ef463f57cba4c48f431bf3b8205f380c5ed81/0_273_4096_2458/master/4096.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c8c7ec8ded6338c189c6f2263fdf514e",
          "title":"London hospital trust to pay £250k to install LTN for public health benefits",
-         "thumbnail":"thumbnail.png"
+         "thumbnail":"thumbnail_v2.jpg"
       },
       {
          "article_url":"https://www.nytimes.com/2020/11/15/health/Covid-doctors-nurses-quitting.html",
@@ -19,7 +19,7 @@
          "snippet_type":"image",
          "snippet_url":"https://static01.nyt.com/images/2020/11/03/science/00VIRUS-DOCTORS1/00VIRUS-DOCTORS1-facebookJumbo.jpg",
          "title":"Doctors Are Calling It Quits Under Stress of the Pandemic",
-         "thumbnail":"thumbnail.png"
+         "thumbnail":"thumbnail_v2.jpg"
       },
       {
          "article_url":"https://www.nytimes.com/2020/11/18/health/coronavirus-childhood-vaccines-immunizations.html",
@@ -28,7 +28,7 @@
          "snippet_type":"text",
          "snippet_url":"",
          "title":"Children in U.S. May Miss 9 Million Vaccine Doses in 2020, Report Warns",
-         "thumbnail":"thumbnail.png"
+         "thumbnail":"thumbnail_v2.jpg"
       },
       {
          "article_url":"https://www.nytimes.com/2020/11/19/health/remdesivir-covid-19.html",
@@ -37,7 +37,7 @@
          "snippet_type":"text",
          "snippet_url":"",
          "title":"W.H.O. Rejects Antiviral Drug Remdesivir as a Covid Treatment",
-         "thumbnail":"thumbnail.png"
+         "thumbnail":"thumbnail_v2.jpg"
       },
       {
          "article_url":"https://www.theguardian.com/technology/video/2020/oct/29/who-the-hell-elected-you-big-tech-ceos-grilled-in-us-senate-hearing-video",
@@ -46,7 +46,7 @@
          "snippet_type":"image",
          "snippet_url":"https://i.guim.co.uk/img/media/e2b358b254ea34a9eacd3d164dbf4991b3d99a1f/0_171_5140_3084/master/5140.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0f936a181a1f41bda76287ae560696ab",
          "title":"'Who the hell elected you?' Big tech CEOs grilled in US Senate hearing – video",
-         "thumbnail":"thumbnail.png"
+         "thumbnail":"thumbnail_v2.jpg"
       }
    ],
    "secondary_snippets":[
@@ -57,7 +57,7 @@
          "snippet_type":"text",
          "snippet_url":"",
          "title":"Can tech really keep our teenagers safe online?",
-         "thumbnail":"thumbnail.png"
+         "thumbnail":"thumbnail_v2.jpg"
       },
       {
          "article_url":"https://www.theguardian.com/artanddesign/2020/nov/19/caravaggio-raphael-tutankhamun-adam-lowe-master-faker-covid",
@@ -66,7 +66,7 @@
          "snippet_type":"text",
          "snippet_url":"",
          "title":"One Caravaggio coming right up! Adam Lowe, the art world's master faker",
-         "thumbnail":"thumbnail.png"
+         "thumbnail":"thumbnail_v2.jpg"
       },
       {
          "article_url":"https://www.theguardian.com/environment/2020/nov/20/so-you-want-to-set-up-a-low-traffic-neighbourhood-heres-where-to-start",
@@ -75,7 +75,7 @@
          "snippet_type":"text",
          "snippet_url":"",
          "title":"So you want to set up a low-traffic neighbourhood? Here’s where to start",
-         "thumbnail":"thumbnail.png"
+         "thumbnail":"thumbnail_v2.jpg"
       }
    ]
 }

@@ -1,10 +1,80 @@
 [
     {
         "personaID" : "persona1",
-        "persona" : "Images & Graphics",
-        "description" : "Content best for static visual learners",
+        "persona" : "Images",
+        "description" : "",
         "affinities": {
             "image" : 1.0,
+            "video" : 0.0,
+            "graph" : 0.0,
+            "table" : 0.0,
+            "audio" : 0.0,
+            "graphic" : 0.0,
+            "text" : 0.0
+        }
+    },
+    {
+        "personaID" : "persona2",
+        "persona" : "Videos",
+        "description" : "s",
+        "affinities": {
+            "image" : 0.0,
+            "video" : 1.0,
+            "graph" : 0.0,
+            "table" : 0.0,
+            "audio" : 0.0,
+            "graphic" : 0.0,
+            "text" : 0.0
+        }
+    },
+    {
+        "personaID" : "persona3",
+        "persona" : "Graphs",
+        "description" : "",
+        "affinities": {
+            "image" : 0.0,
+            "video" : 0.0,
+            "graph" : 1.0,
+            "table" : 0.0,
+            "audio" : 0.0,
+            "graphic" : 0.0,
+            "text" : 0.0
+        }
+    },
+    {
+        "personaID" : "persona4",
+        "persona" : "Tables",
+        "description" : "",
+        "affinities": {
+            "image" : 0.0,
+            "video" : 0.0,
+            "graph" : 0.0,
+            "table" : 1.0,
+            "audio" : 0.0,
+            "graphic" : 0.0,
+            "text" : 0.0
+        }
+    },
+    {
+        "personaID" : "persona5",
+        "persona" : "Audio",
+        "description" : "",
+        "affinities": {
+            "image" : 0.0,
+            "video" : 0.0,
+            "graph" : 0.0,
+            "table" : 0.0,
+            "audio" : 1.0,
+            "graphic" : 0.0,
+            "text" : 0.0
+        }
+    },
+    {
+        "personaID" : "persona6",
+        "persona" : "Infographics",
+        "description" : "",
+        "affinities": {
+            "image" : 0.0,
             "video" : 0.0,
             "graph" : 0.0,
             "table" : 0.0,
@@ -14,37 +84,9 @@
         }
     },
     {
-        "personaID" : "persona2",
-        "persona" : "Videos & Audio",
-        "description" : "Content best for audio learners",
-        "affinities": {
-            "image" : 0.0,
-            "video" : 1.0,
-            "graph" : 0.0,
-            "table" : 0.0,
-            "audio" : 1.0,
-            "graphic" : 0.0,
-            "text" : 0.0
-        }
-    },
-    {
-        "personaID" : "persona3",
-        "persona" : "Graphs & Tables",
-        "description" : "Content best for people who like to unpack data",
-        "affinities": {
-            "image" : 0.0,
-            "video" : 0.0,
-            "graph" : 1.0,
-            "table" : 1.0,
-            "audio" : 0.0,
-            "graphic" : 0.0,
-            "text" : 0.0
-        }
-    },
-    {
-        "personaID" : "persona4",
+        "personaID" : "persona7",
         "persona" : "Text",
-        "description" : "Content for reading based learners",
+        "description" : "",
         "affinities": {
             "image" : 0.0,
             "video" : 0.0,
@@ -57,47 +99,47 @@
     },
     {
         "personaID" : "preset1",
-        "persona" : "preset1-RENAME",
+        "persona" : "Multitasking",
         "preset" : true,
-        "description" : "UPDATE",
+        "description" : "I am too busy to sit down and just read the news. I want to get other things done, but still know what is going on in the world.",
         "affinities": {
-            "image" : 1.0,
-            "video" : 0.5,
+            "image" : 0.6,
+            "video" : 0.8,
             "graph" : 0.0,
-            "table" : 0.3,
-            "audio" : 0.0,
-            "graphic" : 1.0,
-            "text" : 0.0
+            "table" : 0.0,
+            "audio" : 1.0,
+            "graphic" : 0.3,
+            "text" : 0.3
         }
     },
     {
         "personaID" : "preset2",
-        "persona" : "preset2-RENAME",
+        "persona" : "Focused",
         "preset" : true,
-        "description" : "UPDATE",
+        "description" : "I like to focus on one thing at a time. I want all the information to be able to make unbiased opinions about the world.",
         "affinities": {
-            "image" : 1.0,
-            "video" : 0.0,
-            "graph" : 0.2,
-            "table" : 0.0,
-            "audio" : 0.2,
-            "graphic" : 1.0,
-            "text" : 0.0
+            "image" : 0.2,
+            "video" : 0.4,
+            "graph" : 1.0,
+            "table" : 1.0,
+            "audio" : 0.0,
+            "graphic" : 0.75,
+            "text" : 0.75
         }
     },
     {
         "personaID" : "preset3",
-        "persona" : "preset3-RENAME",
+        "persona" : "Browsing",
         "preset" : true,
-        "description" : "UPDATE",
+        "description" : "I want to be able to quickly scan and get an idea of what is going on. I don't have the patience to read long articles, but I would like to keep up.",
         "affinities": {
-            "image" : 0.0,
-            "video" : 0.0,
-            "graph" : 0.7,
-            "table" : 0.1,
-            "audio" : 0.2,
+            "image" : 1.0,
+            "video" : 0.4,
+            "graph" : 0.3,
+            "table" : 0.3,
+            "audio" : 0.0,
             "graphic" : 1.0,
-            "text" : 1.0
+            "text" : 0.03
         }
     }
 ]

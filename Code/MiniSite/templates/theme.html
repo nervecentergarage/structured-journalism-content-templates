@@ -264,7 +264,7 @@ html, body {
           <p style="margin:0"><b>Preset Preferences</b></p>
           {% for persona in personas if persona.preset %}
           <div class="radiobutton">
-            <input type="radio" name="Preset Prefereneces" value="{{persona['persona']}}" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
+            <input type="radio" name="Preset Prefereneces" value="100" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
             <label for="{{persona['persona']}}">{{persona['persona']}}</label>
           </div>
           {% endfor %}
