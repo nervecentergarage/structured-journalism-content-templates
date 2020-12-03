@@ -282,7 +282,15 @@ html, body {
           How do you like your news?
         </div>
         <div class="dropdown-content"  id="personas">
-          {% for persona in personas %}
+          <p style="margin:0"><b>Preset Preferences</b></p>
+          {% for persona in personas if persona.preset %}
+          <div class="radiobutton">
+            <input type="radio" name="Preset Prefereneces" value="{{persona['persona']}}" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
+            <label for="{{persona['persona']}}">{{persona['persona']}}</label>
+          </div>
+          {% endfor %}
+          <p style="margin:0"><b>Custom Preferences</b></p>
+          {% for persona in personas if not persona.preset %}
           <div class="slidecontainer">
             <p>{{persona['persona']}}</p>
             <input type="range" min="0" max="100" value="0" class="slider" id="{{persona['personaID']}}" onchange="updatePersona(id,value)">
