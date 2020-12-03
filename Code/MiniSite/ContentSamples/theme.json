@@ -2,19 +2,19 @@
     {
         "themeID": 75,
         "theme": "AI and ML in Today's world",
-        "theme_description": "AI and ML are latest trends of todays era. Daily some new discoveries are happening in this field.",
+        "theme_description": "Advances in AI and ML are changing how we live, work, and play in big and small ways.",
         "topics": [
             {
                 "topicID": "259",
-                "images": 3,
-                "videos": 0,
-                "graphs": 0,
-                "tables": 0,
-                "audio": 0,
-                "infographics": 0,
-                "text": 5,
-                "summary": "     A new AI system that monitors video content online as it is viewed and blurs anything unsuitable before youngsters see it has been developed.",
-                "title": "Can tech really keep our teenagers safe online?"
+                "image": 1,
+                "video": 1,
+                "graph": 1,
+                "table": 0,
+                "audio": 1,
+                "graphic": 1,
+                "text": 3,
+                "summary": "Artificial Intelligence is having a growing impact on managing our complex modern governments. How does this make a difference in our lives?",
+                "title": "AI and the State"
             },
             {
                 "topicID": "361",
@@ -39,6 +39,42 @@
                 "text": 4,
                 "summary": "Stuart Hogg had a failed attempted kick to touch in the closing moments of the gameAutumn Nations Cup",
                 "title": "Autumn Nations Cup: Scotland 15-22 France"
+            },
+            {
+                "topicID": "361",
+                "images": 3,
+                "videos": 0,
+                "graphs": 0,
+                "tables": 0,
+                "audio": 0,
+                "infographics": 0,
+                "text": 5,
+                "summary": "\"The AI module is designed not only to do the obvious stuff, but it learns as it goes along and becomes anticipatory. It can start to build a picture of how likely you are to try a different brand, or to buy chocolate on a Saturday.\"",
+                "title": "How artificial intelligence may be making you buy things"
+            },
+            {
+                "topicID": "361",
+                "images": 3,
+                "videos": 0,
+                "graphs": 0,
+                "tables": 0,
+                "audio": 0,
+                "infographics": 0,
+                "text": 5,
+                "summary": "\"The AI module is designed not only to do the obvious stuff, but it learns as it goes along and becomes anticipatory. It can start to build a picture of how likely you are to try a different brand, or to buy chocolate on a Saturday.\"",
+                "title": "How artificial intelligence may be making you buy things"
+            },
+            {
+                "topicID": "361",
+                "images": 3,
+                "videos": 0,
+                "graphs": 0,
+                "tables": 0,
+                "audio": 0,
+                "infographics": 0,
+                "text": 5,
+                "summary": "\"The AI module is designed not only to do the obvious stuff, but it learns as it goes along and becomes anticipatory. It can start to build a picture of how likely you are to try a different brand, or to buy chocolate on a Saturday.\"",
+                "title": "How artificial intelligence may be making you buy things"
             }
         ]
     }

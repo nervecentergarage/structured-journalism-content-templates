@@ -84,6 +84,10 @@ html, body {
   .image-container {
     max-height: 10em;
   }
+
+  .flex-container p {
+    min-height: 10px;
+  }
 }
 
 /* persona chip */
@@ -305,7 +309,7 @@ html, body {
 
 <div class = "wrapper">
   <div class="sponsor">
-    <h2 sponsor_name">{{sponsor['sponsor_name']}}</h2>
+    <h2 id= "sponsor_name">{{sponsor['sponsor_name']}}</h2>
   <hr>
     <p id= "sponsor_about_us">{{sponsor['sponsor_about_us']}}</p>
   </div>
@@ -317,7 +321,7 @@ html, body {
       {% for topic in topics %}
         <div class="w3-third">
           <h2 style="font-size:1.25em; font-weight: bold;"><a href="topic?id={{topic['id']}}">{{topic['title']}}</a></h2>
-          <p style="font-size:1em;">{{topic['summary']}}</p>
+          <p style="font-size:1em; min-height: 200px">{{topic['summary']}}</p>
         </div>
       {% endfor %}
     </div>
