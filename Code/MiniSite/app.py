@@ -51,7 +51,7 @@ def theme():
 def topic():
     # read in topic details
     id = request.args.get('id')
-    with open('ContentSamples/topic_detail.json') as f:
+    with open('ContentSamples/topic_detail.json',  'r', encoding="cp866") as f:
         topic_detail = json.load(f)
         primary_snippets = topic_detail['primary_snippets']
         secondary_snippets = topic_detail['secondary_snippets']

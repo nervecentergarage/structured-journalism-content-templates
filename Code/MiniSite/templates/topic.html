@@ -133,7 +133,10 @@ and is wrapped around the whole page content, except for the footer in this exam
         <p style="font-size:1em;">{{snippet['snippet_description']}}</p>
         <div class="w3-row">
           <div class="w3-col m8 s12">
-            <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button></p>
+            <p>
+              <button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button>
+              <button class="w3-button w3-padding-large w3-white w3-border" onclick="pin()"><b>Pin</b></button>
+          </p>
           </div>
           <div class="w3-col m4 w3-hide-small">
             <p><span class="w3-padding-large w3-right"><b>Persona Score </b> <span class="w3-tag">{{snippet['score']}}</span></span></p>
@@ -180,7 +183,10 @@ and is wrapped around the whole page content, except for the footer in this exam
         <p style="font-size:1em;">{{snippet['snippet_description']}}</p>
         <div class="w3-row">
           <div class="w3-col m8 s12">
-            <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button></p>
+            <p>
+              <button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button>
+              <button class="w3-button w3-padding-large w3-white w3-border" onclick="pin()"><b>Pin</b></button>
+            </p>
           </div>
           <div class="w3-col m4 w3-hide-small">
             <p><span class="w3-padding-large w3-right"><b>Persona Score </b> <span class="w3-tag">{{snippet['score']}}</span></span></p>
@@ -222,4 +228,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 
 </body>
+<script>
+  function pin(){
+    alert('pin');
+  }
+</script>
 </html>
