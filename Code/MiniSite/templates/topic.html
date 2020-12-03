@@ -85,6 +85,7 @@ audio { width: 100%; }
 </style>
 <body class="w3-light-grey">
 
+
 <!-- w3-content defines a container for fixed size centered content,
 and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-header" style= "overflow:auto; height: 100%"> <!--style="max-width:1400px"-->
@@ -227,10 +228,31 @@ and is wrapped around the whole page content, except for the footer in this exam
 </footer>
 </div>
 
+  <!-- modal information box -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <header class="w3-container modal-container">
+        <h2>Your Story</h2>
+      </header>
+      <div class="w3-container">
+        <div class="loader"></div>
+        <p>Share your story on Pinterest</p>
+        <p><button onclick="closePin()">Close</button></p>
+      </div>
+    </div>
+  </div>
+
 </body>
 <script>
   function pin(){
-    alert('pin');
+    // allow the user to pin a thumbnail to pinterest
+    // start by showing them a modal box
+    //
+    document.getElementById('id01').style.display='block';
+  }
+  function closePin(){
+  // close the pinterest pin model box
+    document.getElementById('id01').style.display='none';
   }
 </script>
 </html>
