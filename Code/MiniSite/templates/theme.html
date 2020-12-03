@@ -245,6 +245,27 @@ html, body {
   text-align: center;
   padding: 10px;
 }
+
+/* this is used to display and wrap the topic summaries */
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 </style>
   <!--list of articles-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -291,23 +312,14 @@ html, body {
   <div class="main">
     <h2>Welcome</h2>
     <p id= "welcome">{{sponsor['welcome']}}</p>
-    {% set num_cols = 3 %}
-    {% set num_topics = topics|length %}
-    {% set num_rows = (num_topics/num_cols + 0.999)|int %}
-    {% for row in range(0,num_rows) %}
-      <div class="w3-row-padding">
-        {% set start_topic_index = row * num_cols %}
-        {% set end_topic_index = start_topic_index + num_cols %}
-        {% for index in range(start_topic_index,end_topic_index) %}
-          {% if not(index > num_topics -1) %}
-            <div class="w3-third">
-              <h2 style="font-size:1.25em; font-weight: bold;"><a href="topic?id={{topics[index]['topicID']}}">{{topics[index]['title']}}</a></h2>
-              <p style="font-size:1em;">{{topics[index]['summary']}}</p>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endfor %}
+    <div class="flex-container">
+      {% for topic in topics %}
+        <div class="w3-third">
+          <h2 style="font-size:1.25em; font-weight: bold;"><a href="topic?id={{topic['id']}}">{{topic['title']}}</a></h2>
+          <p style="font-size:1em;">{{topic['summary']}}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 
     <div class="menu">
