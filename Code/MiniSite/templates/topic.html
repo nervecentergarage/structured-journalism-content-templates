@@ -21,6 +21,14 @@ img {
   width: 100%;
   height: auto;
 }
+
+.thumbnail {
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* graphic thumbnail */
 .img-graphic {
   border: 1px solid #ddd; /* Gray border */
@@ -136,7 +144,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <div class="w3-col m8 s12">
             <p>
               <button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button>
-              <button class="w3-button w3-padding-large w3-white w3-border" onclick="pin()"><b>Pin</b></button>
+              <button class="w3-button w3-padding-large w3-white w3-border" onclick="pin('static/thumbnail.png')"><b>Pin</b></button>
           </p>
           </div>
           <div class="w3-col m4 w3-hide-small">
@@ -186,7 +194,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <div class="w3-col m8 s12">
             <p>
               <button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('{{snippet['article_url']}}')"><b>Details »</b></button>
-              <button class="w3-button w3-padding-large w3-white w3-border" onclick="pin()"><b>Pin</b></button>
+              <button class="w3-button w3-padding-large w3-white w3-border" onclick="pin('static/thumbnail.png')"><b>Pin</b></button>
             </p>
           </div>
           <div class="w3-col m4 w3-hide-small">
@@ -237,6 +245,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <div class="w3-container">
         <div class="loader"></div>
         <p>Share your story on Pinterest</p>
+        <img id="thumbnail" class="thumbnail" src="">
         <p><button onclick="closePin()">Close</button></p>
       </div>
     </div>
@@ -244,11 +253,14 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 </body>
 <script>
-  function pin(){
+  function pin(img){
     // allow the user to pin a thumbnail to pinterest
     // start by showing them a modal box
     //
     document.getElementById('id01').style.display='block';
+
+    //show the appropriate image thumbnail
+    document.getElementById("thumbnail").src = img;
   }
   function closePin(){
   // close the pinterest pin model box
