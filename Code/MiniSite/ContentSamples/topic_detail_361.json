@@ -1,0 +1,81 @@
+{
+   "summary":"Kids in school today will have always had AI touching their lives in some way. How does the adopting AI early in their educations equip them for their futures?",
+   "title":"Educating for AI Natives",
+   "topicID":"361",
+   "primary_snippets":[
+      {
+         "article_url":"https://www.govtech.com/products/Is-Government-Ready-for-AI.html",
+         "snippetID":"snippet-3266",
+         "snippet_description":"If you're looking for a single word that sums up the status of artificial intelligence today, it could be 'practical.' While the general public might get excited or alarmed by the concept of computers that can see, hear and speak, government has become quite bullish on real-world applications of AI that can find ways to improve the environment, make public spaces safer and, most importantly, strip out the mundane, manual work that clogs up government operations.",
+         "snippet_type":"text",
+         "snippet_url":"",
+         "title":"Is Government Ready for AI?",
+         "thumbnail":"thumbnail_v2.jpg"
+      },
+      {
+         "article_url":"https://apnews.com/article/eae5bd485d5b1015d4fc23f3c5080ef5",
+         "snippetID":"snippet-3833",
+         "snippet_description":"Finland is offering a techy Christmas gift to all European Union citizens — a free-of-charge online course in artificial intelligence in their own language, officials said Tuesday.\nThe tech-savvy Nordic nation, led by the 34-year-old Prime Minister Sanna Marin, is marking the end of its rotating presidency of the EU at the end of the year with a highly ambitious goal.\nInstead of handing out the usual ties and scarves to EU officials and journalists, the Finnish government has opted to give practical understanding of AI to 1% of EU citizens, or about 5 million people, through a basic online course by the end of 2021.",
+         "snippet_type":"text",
+         "snippet_url":"",
+         "title":"Finland offers crash course in artificial intelligence to EU",
+         "thumbnail":"thumbnail_v2.jpg"
+      },
+      {
+         "article_url":"https://apolitical.co/en/solution_article/new-zealand-explores-machine-readable-laws-to-transform-government",
+         "snippetID":"snippet-3750",
+         "snippet_description":"Legislation-as-code might be the key to kick-starting digital reform",
+         "snippet_type":"image",
+         "snippet_url":"https://apolitical.co/wp-content/uploads/2018/05/coding-computer-data-577585-1.jpg",
+         "title":"New Zealand explores machine-readable laws to transform government",
+         "thumbnail":"thumbnail_v2.jpg"
+      },
+      {
+         "article_url":"https://www.youtube.com/watch?v=vh9YFOV70zw",
+         "snippetID":"snippet-3712",
+         "snippet_description":"In part one of Future of Work, Click asks if artificial intelligence can help save the NHS.",
+         "snippet_type":"video",
+         "snippet_url":"https://www.youtube.com/embed/vh9YFOV70zw",
+         "title":"Can artificial intelligence 'save' the NHS? - BBC Click",
+         "thumbnail":"thumbnail_v2.jpg"
+      },
+      {
+         "article_url":"https://www.cognilytica.com/2019/10/31/infographic-ai-in-the-government/",
+         "snippetID":"snippet-4276",
+         "snippet_description":"AI technologies have the ability to transform and influence the lives of many people. AI transform the way we work, interact with each other and travel between locations. Because of this, governments around the world are seeing AI as a strategic advantage.",
+         "snippet_type":"graphic",
+         "snippet_url":"https://www.cognilytica.com/wp-content/uploads/2019/11/Wide_Gov-1170x731.png",
+         "title":"INFOGRAPHIC: AI in the Government",
+         "thumbnail":"thumbnail_v2.jpg"
+      }
+   ],
+   "secondary_snippets":[
+      {
+         "article_url":"https://www.bbc.co.uk/news/technology-54918894",
+         "snippetID":"snippet-3932",
+         "snippet_description":"     A new AI system that monitors video content online as it is viewed and blurs anything unsuitable before youngsters see it has been developed.It is one of a number of tools designed to protect children and teenagers as they explore the internet. But can tech really help solve the problems that tech creates?BBC Click's Lara Lewington reports.Read moreThe BBC has information on what to do if children see something upsetting onlineFor information and support on mental health and suicide, access the BBC Action Line",
+         "snippet_type":"text",
+         "snippet_url":"",
+         "title":"Can tech really keep our teenagers safe online?",
+         "thumbnail":"thumbnail_v2.jpg"
+      },
+      {
+         "article_url":"https://www.bbc.co.uk/programmes/p074m5jf",
+         "snippetID":"snippet-4028",
+         "snippet_description":"A talk for Episode 7. Elsa Sotiriadis on whether AI could run the country",
+         "snippet_type":"audio",
+         "snippet_url":"https://www.bbc.co.uk/sounds/play/p074m5jf",
+         "title":"T7: Would you vote for an AI government?",
+         "thumbnail":"thumbnail_v2.jpg"
+      },
+      {
+         "article_url":"https://www.technologyreview.com/2018/12/12/138682/data-that-illuminates-the-ai-boom/",
+         "snippetID":"snippet-3249",
+         "snippet_description":"Mentions of artificial intelligence and machine learning in the UK Parliament (below) have exploded in the past few years.",
+         "snippet_type":"graph",
+         "snippet_url":"https://cdn.technologyreview.com/i/images/uk-parliament.png?sw=700&cx=239&cy=148&cw=1425&ch=801",
+         "title":"Nine charts that really bring home just how fast AI is growing",
+         "thumbnail":"thumbnail_v2.jpg"
+      }
+   ]
+}
